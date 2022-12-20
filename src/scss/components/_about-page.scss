@@ -5,6 +5,7 @@
 
   &__title {
     margin: 0;
+    padding-top: 25px;
     font-family: var(--font-family-tahoma);
   }
   &__list {
@@ -17,13 +18,25 @@
   justify-content: space-between;
   align-items: center;
 
+  @include small-tablet {
+    flex-direction: column;
+  }
+
   &__image {
 
     &--rotate-1 {
       transform: rotate(3deg);
+
+      @include small-tablet {
+        transform: none;
+      }
     }
     &--rotate-2 {
       transform: rotate(-6deg);
+
+      @include small-tablet {
+        transform: none;
+      }
     }
 
 
@@ -34,5 +47,9 @@
     text-align: end;
     font-family: var(--font-family-segoe);
     font-size: 22px;
+
+    @include small-tablet {
+      text-align: center;
+    }
   }
 }

@@ -4,7 +4,7 @@ const cartSlider = document.querySelector('.cartSlider');
 if (sliderActions) {
   const swiper = new Swiper(sliderActions, {
     slidesPerView: 2,
-    spaceBetween: 90,
+    spaceBetween: 70,
     navigation: {
       nextEl: '.actions-slider-nav__next',
       prevEl: '.actions-slider-nav__prev',

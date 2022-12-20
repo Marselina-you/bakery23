@@ -7,17 +7,30 @@
     font-family: var(--font-family-tahoma);
     font-size: 30px;
 
+    @include small-tablet {
+      font-size: 25px;
+    }
+
 
   }
 }
 .admin-menu-nav {
   &__list {
     display: flex;
+
+    @include small-tablet {
+      flex-direction: column;
+    }
 }
 
 &__item {
   &:not(:last-child) {
     margin-right: 30px;
+
+    @include small-tablet {
+      margin: 0;
+      margin-bottom: 5px;
+    }
   }
 
 }

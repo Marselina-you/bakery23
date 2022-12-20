@@ -9,6 +9,15 @@
     grid-column: 4 span;
     display: flex;
 
+    @include tablet {
+      grid-column: 6 span;
+      flex-direction: column;
+    }
+
+    @include small-tablet {
+      grid-column: 12 span;
+    }
+
   }
   &__right {
     padding-left: 20px;

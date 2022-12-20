@@ -8,8 +8,23 @@
     justify-content: space-between;
   }
 
+  
   &__logo {
     margin-top: 24px;
+
+    @include tablet {
+      margin-top: 74px;
+    }
+
+    img {
+      width: 250px;
+      height: 211px;
+
+      @include tablet {
+        width: 150px;
+        height: auto;
+      }
+    }
 
   }
   &__burger {

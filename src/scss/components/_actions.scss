@@ -3,6 +3,10 @@
   background-size: cover;
   background-repeat: no-repeat;
 
+  @include small-tablet {
+    display: none;
+  }
+
   &__title {
     margin: 0;
     padding: 40px 0;
@@ -10,6 +14,10 @@
     font-size: 35px;
     color: var(--wood-bark-color);
     text-shadow: white 2px 3px 4px;
+
+    @include tablet {
+      padding: 10px 0;
+    }
   }
   &__date {
     margin: 0;

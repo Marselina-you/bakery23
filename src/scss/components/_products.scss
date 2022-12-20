@@ -1,11 +1,22 @@
 .products {
   padding: 40px 0;
   background-color: var(--varden-color);
+
+  @include small-tablet {
+    padding: 10px 0;
+  }
 &__item {
   grid-column: 4 span;
+
+  @include small-tablet {
+    grid-column: 12 span;
+  }
 }
 &__image {
   display: inline-block;
+  text-align: center;
+
+
 
 
 
@@ -16,6 +27,9 @@
       &:hover {
 
         transform: rotate(5deg);
+      }
+      @include small-tablet {
+        width: 80%;
       }
     }
 
@@ -53,5 +67,15 @@
     font-size: 24px;
     line-height: 150%;
     color: var(--wood-bark-color);
+
+    @include tablet {
+      width: 90%;
+      font-size: 20px;
+      line-height: 100%;
+    }
+
+    @include small-tablet {
+      display: none;
+    }
   }
 }

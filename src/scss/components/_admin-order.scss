@@ -1,6 +1,10 @@
 .admin-order {
   background-color: var(--blue-light-color);
 
+  &__body {
+    gap: 0;
+  }
+
   &__block {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -11,4 +15,8 @@
   }
 
 
+}
+.admin-table__grid {
+  grid-column: 12 span;
+  width: 100%;
 }

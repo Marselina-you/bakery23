@@ -5,7 +5,6 @@
   color: var(--wood-bark-color);
 
   @include tablet {
-    margin-top: -6px;
     height: 600px;
   }
 
@@ -17,6 +16,20 @@
   &__logo {
     margin-top: 24px;
 
+    @include tablet {
+      margin-top: 74px;
+    }
+
+    img {
+      width: 250px;
+      height: 211px;
+
+      @include tablet {
+        width: 150px;
+        height: auto;
+      }
+    }
+
   }
   &__title {
     margin-top: 85px;
@@ -25,12 +38,20 @@
     font-size: 50px;
     line-height: 30%;
     text-transform: uppercase;
+
+    @include small-tablet {
+      font-size: 35px;
+    }
   }
   &__slogan {
     font-family: var(--font-family-tahoma);
     font-size: 35px;
     line-height: 150%;
     text-transform: uppercase;
+
+    @include small-tablet {
+      font-size: 25px;
+    }
   }
   &__subtitle {
     margin-top: 40px;

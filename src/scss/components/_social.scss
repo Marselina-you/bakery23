@@ -10,9 +10,13 @@
 
     &:not(:last-child) {
       margin-right: 50px;
+
+      @include small-tablet {
+        margin-right: 15px;
+      }
     }
 
-    
+
     svg {
       width: 35px;
       height: 35px;

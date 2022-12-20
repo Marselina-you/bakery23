@@ -6,12 +6,20 @@
     display: flex;
     justify-content: flex-end;
 
+    @include tablet {
+      justify-content: space-between;
+    }
+
   }
   &__item {
 
 
     &:not(:last-child) {
       margin-right: 50px;
+
+      @include small-tablet {
+        margin-right: 10px;
+      }
     }
 
     svg {
@@ -55,9 +63,14 @@
     }
 
 
+
   }
 
-
+&__span {
+  @include small-tablet {
+    display: none;
+  }
+}
 
   }
 

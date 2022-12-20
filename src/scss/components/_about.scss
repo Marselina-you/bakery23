@@ -4,7 +4,10 @@
   &__block {
     display: inline-flex;
     padding: 60px 0;
-    //vertical-align: middle;
+
+    @include small-tablet {
+      padding: 20px 0;
+    }
   }
 
   .about-images {
@@ -12,6 +15,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include small-tablet {
+      display: none;
+    }
 
     &__item {
 
@@ -32,19 +39,20 @@
 
   }
   &__content {
-padding-top: 5%;
+    padding-top: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    //padding: 30px;
-    //vertical-align: middle;
-    //vertical-align: space-between;
     color: var(--light-color);
     background-image: url("../img/protiv.png");
     background-size: 70% 80%;
     background-position: center;
     background-repeat: no-repeat;
+
+    @include small-tablet {
+      background-size: 90% 80%;
+      background-color: var(--varden-color);
+    }
   }
   &__title {
     margin-top: 5%;
@@ -52,6 +60,11 @@ padding-top: 5%;
     font-family: var(--font-family-jost);
     font-size: 28px;
     line-height: 150%;
+
+    @include tablet {
+      margin-top: 20px;
+      padding: 5px 0;
+    }
   }
   &__text {
     margin-bottom: 40px;
@@ -61,5 +74,10 @@ padding-top: 5%;
     font-family: var(--font-family-segoe);
     font-size: 20px;
     line-height: 160%;
+
+    @include tablet {
+      margin-bottom: 30px;
+      font-size: 18px;
+    }
   }
 }

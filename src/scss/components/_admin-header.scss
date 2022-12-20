@@ -3,6 +3,10 @@
   padding: 20px 0;
   &__list {
     display: flex;
+
+    @include small-tablet {
+      flex-direction: column;
+    }
   }
 
 
@@ -13,6 +17,11 @@
   &__item {
     &:not(:last-child) {
       margin-right: 40px;
+
+      @include small-tablet {
+        margin: 0;
+        margin-bottom: 10px;
+      }
     }
   }
   &__link {

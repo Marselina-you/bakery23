@@ -202,7 +202,7 @@ const cartSlider = document.querySelector('.cartSlider');
 if (sliderActions) {
   const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](sliderActions, {
     slidesPerView: 2,
-    spaceBetween: 90,
+    spaceBetween: 70,
     navigation: {
       nextEl: '.actions-slider-nav__next',
       prevEl: '.actions-slider-nav__prev'

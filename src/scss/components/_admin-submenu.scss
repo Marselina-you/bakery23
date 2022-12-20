@@ -30,11 +30,20 @@
   &__list {
     display: flex;
     padding-bottom: 20px;
+
+    @include small-tablet {
+      flex-direction: column;
+    }
   }
 
   &__item {
     &:not(:last-child) {
       margin-right: 30px;
+
+      @include small-tablet {
+        margin: 0;
+        margin-bottom: 5px;
+      }
     }
 
   }
