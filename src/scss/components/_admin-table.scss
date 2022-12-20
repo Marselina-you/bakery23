@@ -1,0 +1,64 @@
+.admin-table {
+  border-collapse: collapse;
+  border: 2px solid black;
+  width: 80%;
+  background-color: var(--light-color);
+
+&__th {
+  border: 1px solid black;
+  padding: 10px 0;
+  font-family: var(--font-family-tahoma);
+  font-size: 20px;
+  color: black;
+  background-color: var( --gray-color);
+}
+
+&__td {
+  border: 1px solid black;
+  padding: 10px 5px;
+  font-family: var(--font-family-jost);
+  font-size: 20px;
+  color: black;
+
+ 
+
+
+
+
+}
+&__tr {
+  &:nth-child(odd) {
+    background-color: var(--blue-color);
+  }
+}
+&__link {
+
+  &--danger {
+    color: var(--red-color);
+
+    &:active {
+     color: var(--red-color-hover);
+    }
+    &:hover {
+      color: var(--red-color-hover);
+    }
+    &:focus {
+      color: var(--red-color-hover);
+    }
+  }
+
+  &--active {
+    color : var(--jaffa-color);
+
+    &:active {
+      color: var(--jaffa-color-hover);
+     }
+     &:hover {
+       color: var(--jaffa-color-hover);
+     }
+     &:focus {
+       color: var(--jaffa-color-hover);
+     }
+  }
+}
+}

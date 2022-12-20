@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Bakery2023</title>
+
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+  <div class="site-container">
+    <section class="admin-header">
+  <div class="container-fluid">
+    <nav class="admin-nav admin-header__nav" title="">
+      <ul class="admin-nav__list admin-header__list list-reset">
+        <li class="admin-nav__item">
+          <a href="#" class="admin-nav__link">
+            <svg>
+              <use xlink:href="img/sprite.svg#admin-face"></use>
+            </svg>
+          <span>АдминПанель</span>
+        </a></li>
+        <li class="admin-nav__item"><a href="#" class="admin-nav__link">
+          <svg>
+            <use xlink:href="img/sprite.svg#to-site"></use>
+          </svg>
+          <span>Котобус</span></a></li>
+        <li class="admin-nav__item"><a href="#" class="admin-nav__link">
+          <svg>
+            <use xlink:href="img/sprite.svg#admin"></use>
+          </svg>
+          <span>На сайт</span></a></li>
+
+      </ul>
+    </nav>
+  </div>
+</section>
+
+    <main class="main">
+
+      <section class="admin-menu">
+  <div class="container-fluid">
+    <h2 class="admin-menu__title">Вы вошли в АдминПанель как Котобус</h2>
+    <nav class="admin-menu-nav" title="menu-admin">
+      <ul class="admin-menu-nav__list list-reset">
+        <li class="admin-menu-nav__item"><a href="#" class="admin-menu-nav__link">Управление товарами</a></li>
+        <li class="admin-menu-nav__item"><a href="#" class="admin-menu-nav__link admin-menu-nav__link--active">Управление категориями</a></li>
+        <li class="admin-menu-nav__item"><a href="#" class="admin-menu-nav__link">Управление заказами</a></li>
+
+      </ul>
+    </nav>
+  </div>
+</section>
+
+      <section class="admin-submenu">
+  <div class="container-fluid">
+    <h2 class="admin-submenu__title"><a href="">Добавить новый товар</a></h2>
+    <ul class="admin-submenu__list list-reset">
+      <li class="admin-submenu__item">
+        <a href="#" class="admin-submenu__link admin-submenu__link--active">Пирожные</a>
+      </li>
+      <li class="admin-submenu__item">
+        <a href="#" class="admin-submenu__link">Черный хлеб</a>
+      </li>
+      <li class="admin-submenu__item">
+        <a href="#" class="admin-submenu__link">Белая выпечка</a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="admin-order">
+  <div class="container-fluid admin-order__container">
+    <div class="admin-order__block">
+      <table class="admin-table">
+        <tr class="admin-table__tr">
+          <th class="admin-table__th">Id заказа</th>
+          <th class="admin-table__th">Имя покупателя</th>
+          <th class="admin-table__th">Телефон</th>
+          <th class="admin-table__th">Дата оформления</th>
+          <th class="admin-table__th">Статус</th>
+        <tr class="admin-table__tr">
+          <td class="admin-table__td">23</td>
+          <td class="admin-table__td">Котобус</td>
+          <td class="admin-table__td">8(505)44044</td>
+          <td class="admin-table__td">43.10.2044</td>
+          <td class="admin-table__td">В обработке</td>
+          <td class="admin-table__td admin-table__td--order">
+            <button class="admin-order__btn admin-table__btn btn--success btn btn-reset">выполнить</button>
+            <button class="admin-order__btn admin-table__btn btn btn-reset btn--danger">отменить</button></td>
+
+        <tr class="admin-table__tr">
+
+          <td class="admin-table__td">23</td>
+          <td class="admin-table__td">Котобус</td>
+          <td class="admin-table__td">8(505)44044</td>
+          <td class="admin-table__td">43.10.2044</td>
+          <td class="admin-table__td">В обработке</td>
+          <td class="admin-table__td">
+            <button class="admin-order__btn admin-table__btn btn--success btn btn-reset">выполнить</button>
+            <button class="admin-order__btn admin-table__btn btn btn-reset btn--danger">отменить</button></td>
+        <tr class="admin-table__tr">
+      </table>
+    </div>
+  </div>
+</section>
+
+      <section class="admin-category">
+  <div class="container-fluid admin-category__container">
+    <div class="admin-category__block">
+      <table class="admin-table">
+        <tr class="admin-table__tr">
+          <th class="admin-table__th">Id</th>
+          <th class="admin-table__th">Название категории</th>
+          <th class="admin-table__th">Действие</th>
+        <tr class="admin-table__tr">
+          <td class="admin-table__td">23</td>
+          <td class="admin-table__td">Черный хлеб</td>
+          <td class="admin-table__td"><a href="" class="admin-table__link admin-table__link--danger">удалить</a>
+            / <a href="" class="admin-table__link--active"> редактировать</a></td>
+        <tr class="admin-table__tr">
+          <td class="admin-table__td">23</td>
+          <td class="admin-table__td">Черный хлеб</td>
+          <td class="admin-table__td"><a href="" class="admin-table__link admin-table__link--danger">удалить</a>
+            / <a href="" class="admin-table__link--active"> редактировать</a></td>
+        <tr class="admin-table__tr">
+          <td class="admin-table__td">23</td>
+          <td class="admin-table__td">Черный хлеб</td>
+          <td class="admin-table__td"><a href="" class="admin-table__link admin-table__link--danger">удалить</a>
+            / <a href="" class="admin-table__link--active"> редактировать</a></td>
+        <tr class="admin-table__tr">
+      </table>
+    </div>
+  </div>
+</section>
+
+      <section class="admin-product">
+  <div class="container-fluid grid">
+    <form action="#" class="admin-product-form">
+
+        <label class="admin-product-form__label">
+          <span class="admin-product-form__caption">Категория</span>
+        <select name="category_id" class="admin-product-form__select">
+          <option value="черный хлеб" name="">черный хлеб</option>
+          <option value="черный хлеб" name="">черный хлеб</option>
+        </select></label>
+
+        <label class="admin-product-form__label">
+          <span class="admin-product-form__caption">Название товара</span>
+        <input type="text" class="admin-product-form__input">
+      </label>
+
+        <label class="admin-product-form__label">
+          <span class="admin-product-form__caption">Стоимость</span>
+      <input type="text" class="admin-product-form__input">
+    </label>
+
+        <label class="admin-product-form__label">
+          <span class="admin-product-form__caption">Вес</span>
+      <input type="text" class="admin-product-form__input">
+    </label>
+
+        <label class="admin-product-form__label admin-product-form__label--title">
+          <span class="admin-product-form__caption">Описание</span>
+        <textarea type="text" class="admin-product-form__textarea"></textarea>
+      </label>
+
+        <label class="admin-product-form__label">
+          <span class="admin-product-form__caption">Ингредиент 1</span>
+<input type="text" class="admin-product-form__input">
+      </label>
+
+        <label class="admin-product-form__label">
+          <span class="admin-product-form__caption">Ингредиент 2</span>
+      <input type="text" class="admin-product-form__input">
+    </label>
+
+        <label class="admin-product-form__label">
+          <span class="admin-product-form__caption">Ингредиент 3</span>
+      <input type="text" class="admin-product-form__input">
+    </label>
+
+        <label class="admin-product-form__label admin-product-form__label--title">
+          <span class="admin-product-form__caption">Слоган</span>
+        <input type="text" class="admin-product-form__input">
+      </label>
+
+        <label class="admin-product-form__label">
+          <span class="admin-product-form__caption">Топпинг 1</span>
+        <input type="text" class="admin-product-form__input">
+      </label>
+
+        <label class="admin-product-form__label">
+          <span class="admin-product-form__caption">Топпинг 2</span>
+                <input type="text" class="admin-product-form__input">
+    </label>
+
+        <label class="admin-product-form__label">
+          <span class="admin-product-form__caption">Топпинг 3</span>
+        <input type="text" class="admin-product-form__input">
+      </label>
+
+        <label class="admin-product-form__label admin-product-form__label--title">
+          <span class="admin-product-form__caption">Статус</span>
+        <select name="category_id" class="admin-product-form__select">
+          <option value="черный хлеб" name="">бестселлер</option>
+          <option value="черный хлеб" name="">уже в продаже</option>
+        </select>
+      </label>
+
+      <div class="admin-product-radio">
+        <span class="admin-product-form__caption">Наличие</span>
+        <legend class="admin-product-radio__legend">
+          <input type="radio" id="huey" name="drone" class="admin-product-radio__input" value="huey" checked>
+            <label class="admin-product-radio__label">В наличии</label>
+            <input type="radio" id="dewey" class="admin-product-radio__input" name="drone" value="dewey">
+            <label class="admin-product-radio__label">Нет</label>
+          </legend>
+      </div>
+       <div class="admin-product-radio">
+      <span class="admin-product-form__caption">Слайдер</span>
+      <legend class="admin-product-radio__legend">
+        <input type="radio" id="huey" name="drone" class="admin-product-radio__input" value="huey" checked>
+          <label class="admin-product-radio__label">true</label>
+          <input type="radio" id="dewey" class="admin-product-radio__input" name="drone" value="dewey">
+          <label class="admin-product-radio__label">false</label>
+        </legend>
+    </div>
+
+    </form>
+  </div>
+</section>
+
+    </main>
+    <footer class="admin-footer">
+  <div class="container-fluid admin-footer__container">
+    <div class="admin-footer__author">Alferova.studio.com</div>
+
+  </div>
+</footer>
+
+  </div>
+</body>
+
+</html>

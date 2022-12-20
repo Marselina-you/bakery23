@@ -1,0 +1,71 @@
+.catalog-accordion {
+
+  &__control {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    //padding: var(--small-offset) 0;
+    width: 100%;
+
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  &__subtitle {
+    font-family: var(--font-family-tahoma);
+    font-size: 24px;
+    color: var(--wood-bark-color);
+  }
+  &__descr {
+    font-family: var(--font-family-jost);
+    font-size: 20px;
+    color: var(--wood-bark-color);
+  }
+
+
+    &__item {
+      font-family: var(--font-family-jost);
+      font-size: 20px;
+      line-height: 150%;
+      color: var(--wood-bark-color);
+    }
+    &__icon {
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      margin-top: 5px;
+      margin-left: var(--small-offset);
+      background-image: url("../img/cross.svg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      transition: transform 0.3s ease-out;
+    }
+    &__content {
+      overflow: hidden;
+      padding: 0 20px;
+      max-height: 0;
+
+      box-sizing: content-box;
+      opacity: 0;
+      transition: all 0.3s ease-out;
+      will-change: max-height;
+
+
+    }
+    &__content--max {
+      margin-left: 25%;
+      max-width: 50%;
+      text-align: center;
+    }
+  }
+  .open .catalog-accordion__content {
+    padding-bottom: var(--small-offset);
+    opacity: 1;
+
+  }
+  .open .catalog-accordion__icon {
+    transform: rotate(45deg);
+  }
+
+

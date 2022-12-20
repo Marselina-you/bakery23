@@ -1,0 +1,10 @@
+.admin-footer {
+  padding: 30px;
+  background-color: var(--blue-color);
+
+  &__author {
+    font-family: var(--font-family-tahoma);
+    font-size: 18px;
+    color: black;
+  }
+}

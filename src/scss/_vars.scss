@@ -1,0 +1,62 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --content-width: 1220px;
+  --content-fluid-width: 1790px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --container-fluid-width: calc(var(--content-fluid-width) + (var(--container-offset) * 2));
+  //--font-family: "Open Sans", sans-serif;
+  --font-family-tahoma: "Tahoma", sans-serif;
+  --font-family-tahoma-bold: "TahomaBold", sans-serif;
+  --font-family-jost: "JostRegular", sans-serif;
+  --font-family-segoe: "SegoePrint", sans-serif;
+
+//offset
+//offset
+--main-offset: 40px;
+--second-offset: 20px;
+--big-offset: 60px;
+--small-offset: 10px;
+
+
+
+
+  // colors
+  //text
+  --light-color: #fff;
+  --wood-bark-color: #2e1207;
+  --shadow-color: #8b7355;
+  --millbrook-color: #5F3F33;
+  --kashmir-blue-color: #516293;
+  //btn
+  --jaffa-color: #f17345;
+  --jaffa-color-hover: #cc623b;
+  --genoa-color: #198754;
+  --genoa-color-hover: #157347;
+  --royal-blue-color: #3580e7;
+  --red-color: #fb3737;
+  --red-color-hover: #c42f2f;
+  //category
+  --porshe-color: #ebb764;
+  --porshe-color-hover: #d2a45a;
+  --manz-color: #f1ed7f;
+  --manz-color-hover: #d5d16e;
+  --apricot-color: #e49c71;
+  --apricot-color-hover: #cc8b64;
+ //bg
+  --varden-color: #FFF8DC;
+  --mexican-red-color: #A52A2A;
+  --grain-brown-color: #dcd7af;
+  --blue-color: #dfebf4ff;
+  --blue-light-color: #f2f3f5;
+  --gray-color: #c7c6c6;
+  //ellipce
+  --hot-pink-color: #ff64af;
+  --bondi-blue-color: #008DBD;
+  --celery-color: #b0c661;
+
+
+
+}

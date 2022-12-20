@@ -1,0 +1,65 @@
+.about {
+  background-color: var(--varden-color);
+
+  &__block {
+    display: inline-flex;
+    padding: 60px 0;
+    //vertical-align: middle;
+  }
+
+  .about-images {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__item {
+
+      img {
+
+        svg {
+          width: 140px;
+          height: 120px;
+        }
+
+      }
+
+      &:not(:last-child) {
+        padding-bottom: 25px;
+      }
+    }
+
+
+  }
+  &__content {
+padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    //padding: 30px;
+    //vertical-align: middle;
+    //vertical-align: space-between;
+    color: var(--light-color);
+    background-image: url("../img/protiv.png");
+    background-size: 70% 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  &__title {
+    margin-top: 5%;
+    padding: 20px 0;
+    font-family: var(--font-family-jost);
+    font-size: 28px;
+    line-height: 150%;
+  }
+  &__text {
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    font-family: var(--font-family-segoe);
+    font-size: 20px;
+    line-height: 160%;
+  }
+}

@@ -1,0 +1,30 @@
+.social {
+
+  &__list {
+    display: flex;
+    justify-content: flex-end;
+
+  }
+  &__item {
+    transition: opacity 0.3s ease-in-out;
+
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+
+    
+    svg {
+      width: 35px;
+      height: 35px;
+      fill: var(--light-color);
+      opacity: 0.8;
+      transition: opacity 0.3s ease-in-out;
+
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+  }
+}

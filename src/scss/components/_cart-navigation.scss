@@ -1,0 +1,25 @@
+.cart-navigation {
+  background-color: var(--varden-color);
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__link {
+    font-family: var(--font-family-tahoma);
+    font-size: 24px;
+    color: var(--shadow-color);
+
+    &:active {
+      border: 1px solid var(--jaffa-color);
+      color: var(--jaffa-color);
+    }
+    &:hover {
+      color: var(--jaffa-color);
+    }
+    &:focus {
+      color: var(--jaffa-color);
+    }
+  }
+}

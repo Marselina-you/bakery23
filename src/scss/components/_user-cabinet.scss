@@ -1,0 +1,11 @@
+.user-cabinet {
+  background-color: var(--varden-color);
+
+  &__title {
+    margin: 0;
+    padding: 40px 0;
+    font-family: var(--font-family-tahoma);
+    font-size: 28px;
+    color: var(--wood-bark-color);
+  }
+}

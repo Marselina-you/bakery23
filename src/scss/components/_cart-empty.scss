@@ -1,0 +1,14 @@
+.cart-empty {
+  background-color: var(--varden-color);
+
+  &__container {
+    padding: 50px 0;
+  }
+
+  &__title {
+    margin: 0;
+    padding: 30px 0;
+    font-family: var(--font-family-tahoma);
+    color: var(--wood-bark-color);
+  }
+}

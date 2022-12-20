@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Bakery2023</title>
+
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+  <div class="site-container">
+    <header class="header">
+  <div class="container">
+    <nav class="nav header__nav" title="">
+      <ul class="nav__list header__list list-reset">
+        <li class="nav__item"><a href="#" class="nav__link">
+          <svg>
+            <use xlink:href="img/sprite.svg#houme"></use>
+          </svg>
+          <span>Главная</span>
+        </a></li>
+        <li class="nav__item"><a href="#" class="nav__link">
+          <svg>
+            <use xlink:href="img/sprite.svg#shop"></use>
+          </svg>
+          <span>Каталог</span></a></li>
+        <li class="nav__item"><a href="#" class="nav__link">
+          <svg>
+            <use xlink:href="img/sprite.svg#basket"></use>
+          </svg>
+          <span>Корзина</span></a></li>
+        <li class="nav__item"><a href="#" class="nav__link">
+          <svg>
+            <use xlink:href="img/sprite.svg#order"></use>
+          </svg>
+          <span>Заказы</span></a></li>
+        <li class="nav__item"><a href="#" class="nav__link">
+          <svg>
+            <use xlink:href="img/sprite.svg#mail"></use>
+          </svg>
+          <span>Написать</span></a></li>
+        <li class="nav__item"><a href="#" class="nav__link">
+          <svg>
+            <use xlink:href="img/sprite.svg#account"></use>
+          </svg>
+          <span>Войти</span></a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+    <main class="main">
+
+      <section class="logo">
+  <div class="container logo__container">
+    <div class="logo__left">
+      <div class="logo__logo">
+        <img loading="lazy" src="/img/logo.svg" class="" width="246" height="207">
+      </div>
+    </div>
+<div class="logo__right">
+  <button class="btn-reset burger logo__burger" aria-label="Открыть меню" aria-expanded="false"  data-burger>
+    <span class="burger__line"></span>
+    <span class="burger__line"></span>
+    <span class="burger__line"></span>
+  </button>
+</div>
+</div>
+</section>
+
+      <section class="cart-navigation">
+  <div class="container">
+    <h2 class="user-cabinet__title">Корзина</h2>
+    <div class="cart-navigation__content">
+      <a href="#" class="cart-navigation__link">Перейти в каталог</a>
+      <nav class="menu-cabinet-nav" title="menu-cart">
+        <ul class="nav__list list-reset">
+          <li class="nav__item"><a href="#" class="nav__link">Пирожные</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Белая выпечка</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Черный хлеб</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  </div>
+</section>
+
+      <section class="cart-content">
+  <div class="container cart-content__container">
+    <div class="cart-content__products">
+      <article class="cart-content__article grid">
+        <div class="cart-content-left">
+
+          <div class="cart-content-left__image">
+            <img src="img/catalog-1.png" alt="">
+          </div>
+          </div>
+        <div class="cart-content-right">
+          <h3 class="cart-content-right__name">Бородинский хлеб</h3>
+          <span class="cart-content-right__weight">700 gramm</span>
+          <div class="cart-content-right__quant">Количество: <span>2</span>
+          </div>
+          <div class="cart-content-right__value">124 P</div>
+  <button class="btn btn-reset btn--danger">удалить</button>
+        </div>
+      </article>
+      <article class="cart-content__article grid">
+        <div class="cart-content-left">
+
+          <div class="cart-content-left__image">
+            <img src="img/catalog-1.png" alt="">
+          </div>
+          </div>
+        <div class="cart-content-right">
+          <h3 class="cart-content-right__name">Бородинский хлеб</h3>
+          <span class="cart-content-right__weight">700 gramm</span>
+          <div class="cart-content-right__quant">Количество: <span>2</span>
+          </div>
+          <div class="cart-content-right__value">124 P</div>
+  <button class="btn btn-reset btn--danger">удалить</button>
+        </div>
+      </article>
+    </div>
+
+    <div class="cart-content-result">
+    <div class="cart-content-result__content">
+      <div class="cart-content-result__quant">Количество товаров
+        <strong class="cart-content-result__value">10</strong>
+      </div>
+      <div class="cart-content-result__summ">К оплате
+        <strong class="cart-content-result__value">1000 P</strong>
+      </div>
+      <button class="btn btn-reset btn--success">Оформить заказ
+      </button>
+    </div>
+  </div>
+  </div>
+</section>
+
+      <section class="cart-empty">
+<div class="container cart-empty__container">
+  <h2 class="cart-empty__title centered">Рекомендуем</h2>
+  <div class="cart-slider">
+    <div class="swiper cartSlider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide cart-slider__slide">
+          <img src="img/upload/catalog-1.png" alt="">
+          <div class="cart-slider__price">45 P</div>
+          <span class="cart-slider__status">bestseller</span>
+          <h3 class=" cart-slider__title">Чайный кекс</h3>
+          <button class="btn btn-reset btn--primary">В корзину</button>
+        </div>
+        <div class="swiper-slide cart-slider__slide">
+          <img src="img/upload/catalog-2.png" alt="">
+          <div class="cart-slider__price">45 P</div>
+          <span class="cart-slider__status">bestseller</span>
+          <h3 class=" cart-slider__title">Чайный кекс</h3>
+          <button class="btn btn-reset btn--primary">В корзину</button>
+        </div>
+        <div class="swiper-slide cart-slider__slide">
+          <img src="img/upload/catalog-3.png" alt="">
+          <div class="cart-slider__price">45 P</div>
+          <span class="cart-slider__status">bestseller</span>
+          <h3 class=" cart-slider__title">Чайный кекс</h3>
+          <button class="btn btn-reset btn--primary">В корзину</button>
+        </div>
+        <div class="swiper-slide cart-slider__slide">
+          <img src="img/upload/catalog-1.png" alt="">
+          <div class="cart-slider__price">45 P</div>
+          <span class="cart-slider__status">bestseller</span>
+          <h3 class=" cart-slider__title">Чайный кекс</h3>
+          <button class="btn btn-reset btn--primary">В корзину</button>
+        </div>
+        <div class="swiper-slide cart-slider__slide">
+          <img src="img/upload/catalog-5.png" alt="">
+          <div class="cart-slider__price">45 P</div>
+          <span class="cart-slider__status">bestseller</span>
+          <h3 class=" cart-slider__title">Чайный кекс</h3>
+          <button class="btn btn-reset btn--primary">В корзину</button>
+        </div>
+        <div class="swiper-slide cart-slider__slide">
+          <img src="img/upload/catalog-6.png" alt="">
+          <div class="cart-slider__price">45 P</div>
+          <span class="cart-slider__status">bestseller</span>
+          <h3 class=" cart-slider__title">Чайный кекс</h3>
+          <button class="btn btn-reset btn--primary">В корзину</button>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</div>
+</section>
+
+    </main>
+    <footer class="footer">
+  <div class="container footer__container">
+    <div class="footer__author">Alferova.studio.com</div>
+    <nav class="nav social footer__social" title="">
+      <ul class="social__list list-reset">
+        <li class="social__item"><a href="#" class="social__link">
+          <svg>
+            <use xlink:href="img/sprite.svg#odno"></use>
+          </svg>
+        </a></li>
+        <li class="social__item"><a href="#" class="social__link">
+          <svg>
+            <use xlink:href="img/sprite.svg#vk"></use>
+          </svg>
+        </a></li>
+        <li class="social__item"><a href="#" class="social__link">
+          <svg>
+            <use xlink:href="img/sprite.svg#twit"></use>
+          </svg>
+        </a></li>
+        <li class="social__item"><a href="#" class="social__link">
+          <svg>
+            <use xlink:href="img/sprite.svg#what"></use>
+          </svg>
+        </a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+  </div>
+</body>
+
+</html>

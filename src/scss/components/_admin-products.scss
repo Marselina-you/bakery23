@@ -1,0 +1,100 @@
+.admin-products {
+  background-color: var(--blue-light-color);
+
+  &__list {
+    padding: 40px 0;
+    row-gap: 30px;
+  }
+  &__item {
+    grid-column: 4 span;
+    display: flex;
+
+  }
+  &__right {
+    padding-left: 20px;
+  }
+  &__price {
+    font-family: var(--font-family-tahoma-bold);
+    line-height: 160%;
+  }
+  &__weight {
+    color: gray;
+    line-height: 160%;
+  }
+  &__available {
+    font-family: var(--font-family-jost);
+    font-size: 18px;
+    line-height: 160%;
+  }
+  &__status {
+    font-family: var(--font-family-jost);
+    line-height: 160%;
+    color: var(--jaffa-color);
+  }
+  &__title {
+    font-family: var(--font-family-tahoma-bold);
+    text-transform: uppercase;
+    color: var( --mexican-red-color);
+  }
+  &__subtitle {
+    font-family: var(--font-family-tahoma);
+    font-size: 20px;
+    color: var( --mexican-red-color);
+  }
+  &__text {
+    font-family: var(--font-family-jost);
+    font-size: 18px;
+    color: black;
+  }
+  &__power {
+    padding: 20px 0;
+  }
+  &__link {
+    padding: 5px 0;
+    font-family: var(--font-family-tahoma-bold);
+
+    &--unactive {
+      color: gray;
+      transition: color 0.3s ease-in-out;
+
+      &:active {
+        border: 1px solid black;
+      }
+      &:hover {
+        color: black;
+      }
+      &:focus {
+        color: black;
+      }
+    }
+    &--active {
+      color: var(--jaffa-color);
+      transition: color 0.3s ease-in-out;
+
+      &:active {
+        border: 1px solid var(--jaffa-color-hover);
+      }
+      &:hover {
+        color: var(--jaffa-color-hover);
+      }
+      &:focus {
+        color: var(--jaffa-color-hover);
+      }
+    }
+    &--danger {
+      color: var(--red-color);
+      transition: color 0.3s ease-in-out;
+
+      &:active {
+        border: 1px solid var(--red-color-hover);
+      }
+      &:hover {
+        color: var(--red-color-hover);
+      }
+      &:focus {
+        color: var(--red-color-hover);
+      }
+    }
+  }
+
+}

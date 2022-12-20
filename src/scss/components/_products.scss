@@ -1,0 +1,57 @@
+.products {
+  padding: 40px 0;
+  background-color: var(--varden-color);
+&__item {
+  grid-column: 4 span;
+}
+&__image {
+  display: inline-block;
+
+
+
+    img {
+
+      transition: rotate 0.9s ease-in-out;
+
+      &:hover {
+
+        transform: rotate(5deg);
+      }
+    }
+
+
+
+}
+&__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+  &__title {
+    font-family: var(--font-family-jost);
+    font-size: 24px;
+    line-height: 50%;
+    text-transform: uppercase;
+    color: var(--wood-bark-color);
+    transition: color 0.3s ease-in-out;
+
+    &:active {
+      border: 1px solid var(--jaffa-color-hover);
+    }
+    &:hover {
+      color: var(--jaffa-color-hover);
+    }
+    &:focus {
+      color: var(--jaffa-color-hover);
+    }
+  }
+  &__slogan {
+    margin-bottom: 20px;
+    width: 70%;
+    font-family: var(--font-family-segoe);
+    font-size: 24px;
+    line-height: 150%;
+    color: var(--wood-bark-color);
+  }
+}

@@ -1,0 +1,38 @@
+.about-page {
+  margin: 0;
+
+  background-color: var(--varden-color);
+
+  &__title {
+    margin: 0;
+    font-family: var(--font-family-tahoma);
+  }
+  &__list {
+    padding: 50px 0;
+  }
+}
+.about-page-item {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__image {
+
+    &--rotate-1 {
+      transform: rotate(3deg);
+    }
+    &--rotate-2 {
+      transform: rotate(-6deg);
+    }
+
+
+
+  }
+  &__text {
+    width: 60%;
+    text-align: end;
+    font-family: var(--font-family-segoe);
+    font-size: 22px;
+  }
+}

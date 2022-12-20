@@ -1,0 +1,65 @@
+.admin-header {
+  background-color: var(--blue-color);
+  padding: 20px 0;
+  &__list {
+    display: flex;
+  }
+
+
+}
+.admin-nav {
+
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    font-family: var(--font-family-tahoma);
+    font-size: 22px;
+    color: black;
+    transition: color 0.3s ease-in-out;
+
+    span {
+      padding-left: 10px;
+
+      &:active {
+        border: 1px solid var(--jaffa-color-hover);
+
+      }
+      &:hover {
+        color: var(--kashmir-blue-color);
+      }
+      &:focus {
+        color: var(--kashmir-blue-color);
+      }
+    }
+    svg {
+      width: 30px;
+      height: 30px;
+      fill: black;
+      transition: fill 0.3s ease-in-out;
+
+      &:active {
+        fill: var(--kashmir-blue-color);
+
+      }
+      &:hover {
+        fill: var(--kashmir-blue-color);
+      }
+      &:focus {
+        fill: var(--kashmir-blue-color);
+      }
+    }
+
+    img {
+
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+}

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Bakery2023</title>
+
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+  <div class="site-container">
+    <header class="header">
+  <div class="container">
+    <nav class="nav header__nav" title="">
+      <ul class="nav__list header__list list-reset">
+        <li class="nav__item"><a href="#" class="nav__link">
+          <svg>
+            <use xlink:href="img/sprite.svg#houme"></use>
+          </svg>
+          <span>Главная</span>
+        </a></li>
+        <li class="nav__item"><a href="#" class="nav__link">
+          <svg>
+            <use xlink:href="img/sprite.svg#shop"></use>
+          </svg>
+          <span>Каталог</span></a></li>
+        <li class="nav__item"><a href="#" class="nav__link">
+          <svg>
+            <use xlink:href="img/sprite.svg#basket"></use>
+          </svg>
+          <span>Корзина</span></a></li>
+        <li class="nav__item"><a href="#" class="nav__link">
+          <svg>
+            <use xlink:href="img/sprite.svg#order"></use>
+          </svg>
+          <span>Заказы</span></a></li>
+        <li class="nav__item"><a href="#" class="nav__link">
+          <svg>
+            <use xlink:href="img/sprite.svg#mail"></use>
+          </svg>
+          <span>Написать</span></a></li>
+        <li class="nav__item"><a href="#" class="nav__link">
+          <svg>
+            <use xlink:href="img/sprite.svg#account"></use>
+          </svg>
+          <span>Войти</span></a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+    <main class="main">
+      <section class="logo">
+  <div class="container logo__container">
+    <div class="logo__left">
+      <div class="logo__logo">
+        <img loading="lazy" src="/img/logo.svg" class="" width="246" height="207">
+      </div>
+    </div>
+<div class="logo__right">
+  <button class="btn-reset burger logo__burger" aria-label="Открыть меню" aria-expanded="false"  data-burger>
+    <span class="burger__line"></span>
+    <span class="burger__line"></span>
+    <span class="burger__line"></span>
+  </button>
+</div>
+</div>
+</section>
+
+      <section class="user-cabinet">
+  <div class="container">
+    <h2 class="user-cabinet__title">Личный кабинет Котобус!</h2>
+    <nav class="menu-cabinet-nav" title="menu-cabinet">
+      <ul class="nav__list list-reset">
+        <li class="nav__item"><a href="#" class="nav__link">Доставки</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Покупки</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Корзина</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Мои данные</a></li>
+      </ul>
+    </nav>
+  </div>
+</section>
+
+      <section class="delivery">
+  <div class="container">
+    <h2 class="delivery__title centered">Доставки</h2>
+
+    <div class="delivery-block">
+      <ul class="delivery-block__list list-reset grid">
+        <li class="delivery-block__item">
+          <h3 class="delivery-block__order">Заказ № 3</h3>
+          <span class="delivery-block__status">В пути</span>
+          <div class="delivery-block__date">Ожидается 23 апреля</div>
+          <article class="delivery-block__article">
+            <div class="article__item">
+              <h4 class="delivery-block__title">Бородинский хлеб</h4>
+              <div class="delivery-block__image">
+                <img src="img/catalog-1.png" alt="">
+              </div>
+              <div class="article__item">
+                <h4 class="delivery-block__title">Александровский хлеб</h4>
+                <div class="delivery-block__image">
+                  <img src="img/catalog-2.png" alt="">
+                </div>
+            </div>
+
+          </article>
+
+        </li>
+        <li class="delivery-block__item">
+          <h3 class="delivery-block__order">Заказ № 3</h3>
+          <span class="delivery-block__status delivery-block__status--middle">Готов к выдаче</span>
+          <div class="delivery-block__date delivery-block__date--middle centered">получить до 23 апреля включительно</div>
+          <article class="delivery-block__article">
+            <div class="article__item">
+              <h4 class="delivery-block__title">Бородинский хлеб</h4>
+              <div class="delivery-block__image">
+                <img src="img/catalog-1.png" alt="">
+              </div>
+              <div class="article__item">
+                <h4 class="delivery-block__title">Александровский хлеб</h4>
+                <div class="delivery-block__image">
+                  <img src="img/catalog-2.png" alt="">
+                </div>
+            </div>
+
+          </article>
+
+        </li>
+        <li class="delivery-block__item">
+          <h3 class="delivery-block__order">Заказ № 3</h3>
+          <span class="delivery-block__status delivery-block__status--end">Получено</span>
+          <div class="delivery-block__date delivery-block__date--end">Получено 23 апреля</div>
+          <article class="delivery-block__article">
+            <div class="article__item">
+              <h4 class="delivery-block__title">Бородинский хлеб</h4>
+              <div class="delivery-block__image">
+                <img src="img/catalog-1.png" alt="">
+              </div>
+              <div class="article__item">
+                <h4 class="delivery-block__title">Александровский хлеб</h4>
+                <div class="delivery-block__image">
+                  <img src="img/catalog-2.png" alt="">
+                </div>
+            </div>
+
+          </article>
+
+        </li>
+        <li class="delivery-block__item">
+          <h3 class="delivery-block__order">Заказ № 3</h3>
+          <span class="delivery-block__status">В пути</span>
+          <div class="delivery-block__date">Ожидается 23 апреля</div>
+          <article class="delivery-block__article">
+            <div class="article__item">
+              <h4 class="delivery-block__title">Бородинский хлеб</h4>
+              <div class="delivery-block__image">
+                <img src="img/catalog-1.png" alt="">
+              </div>
+              <div class="article__item">
+                <h4 class="delivery-block__title">Александровский хлеб</h4>
+                <div class="delivery-block__image">
+                  <img src="img/catalog-2.png" alt="">
+                </div>
+            </div>
+
+          </article>
+
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <section class="buy">
+  <div class="container">
+    <h2 class="buy__title centered">Покупки</h2>
+    <div class="buy-block">
+      <ul class="buy-block__list list-reset grid">
+        <li class="buy-block__item">
+          <h3 class="buy-block__order">Заказ № 3</h3>
+
+          <div class="buy-block__status">Получено</div>
+          <article class="buy-block__article">
+            <div class="article__item">
+              <h4 class="buy-block__title">Бородинский хлеб</h4>
+              <div class="buy-block__image">
+                <img src="img/catalog-1.png" alt="">
+              </div>
+              <div class="article__item">
+                <h4 class="buy-block__title">Александровский хлеб</h4>
+                <div class="buy-block__image">
+                  <img src="img/catalog-2.png" alt="">
+                </div>
+              </div>
+          </article>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <section class="user-data">
+  <div class="container">
+    <h2 class="delivery__title centered">Мои данные</h2>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer">
+  <div class="container footer__container">
+    <div class="footer__author">Alferova.studio.com</div>
+    <nav class="nav social footer__social" title="">
+      <ul class="social__list list-reset">
+        <li class="social__item"><a href="#" class="social__link">
+          <svg>
+            <use xlink:href="img/sprite.svg#odno"></use>
+          </svg>
+        </a></li>
+        <li class="social__item"><a href="#" class="social__link">
+          <svg>
+            <use xlink:href="img/sprite.svg#vk"></use>
+          </svg>
+        </a></li>
+        <li class="social__item"><a href="#" class="social__link">
+          <svg>
+            <use xlink:href="img/sprite.svg#twit"></use>
+          </svg>
+        </a></li>
+        <li class="social__item"><a href="#" class="social__link">
+          <svg>
+            <use xlink:href="img/sprite.svg#what"></use>
+          </svg>
+        </a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+.hero {
+  margin-top: -66px;
+  height: 900px;
+  background: url("../img/bg.png");
+  color: var(--wood-bark-color);
+
+  @include tablet {
+    margin-top: -6px;
+    height: 600px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    margin-top: 24px;
+
+  }
+  &__title {
+    margin-top: 85px;
+    font-family: var(--font-family-tahoma-bold);
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 30%;
+    text-transform: uppercase;
+  }
+  &__slogan {
+    font-family: var(--font-family-tahoma);
+    font-size: 35px;
+    line-height: 150%;
+    text-transform: uppercase;
+  }
+  &__subtitle {
+    margin-top: 40px;
+    font-family: var(--font-family-tahoma);
+    font-size: 20px;
+    line-height: 150%;
+
+  }
+  &__burger {
+    margin-top: 95px;
+  }
+}

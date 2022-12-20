@@ -1,0 +1,18 @@
+.logo {
+  margin-top: -66px;
+  background-color: var(--varden-color);
+  color: var(--wood-bark-color);
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    margin-top: 24px;
+
+  }
+  &__burger {
+    margin-top: 95px;
+  }
+}

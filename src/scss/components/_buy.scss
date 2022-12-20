@@ -1,0 +1,67 @@
+.buy {
+  background-color: var(--varden-color);
+
+  &__title {
+    margin: 0;
+    padding: 40px 0;
+    font-family: var(--font-family-tahoma);
+    font-size: 24px;
+    color: var(--shadow-color);
+  }
+
+
+}
+.buy-block {
+
+  &__item {
+    grid-column: 3 span;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__order {
+    margin: 0;
+    padding-bottom: 10px;
+    font-family: var(--font-family-tahoma);
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--wood-bark-color);
+  }
+  &__status {
+    display: flex;
+    align-items: center;
+    height: 45px;
+    font-family: var(--font-family-jost);
+    font-size: 18px;
+    line-height: 120%;
+    color: var(--shadow-color);
+  }
+
+
+  &__title {
+    margin: 0;
+    padding-bottom: 20px;
+    color: var(--wood-bark-color);
+    font-size: 20px;
+    line-height: 150%;
+  }
+  .article__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__image {
+    display: flex;
+    justify-content: center;
+
+    &:not(:last-child) {
+      padding-bottom: 20px;
+    }
+
+
+    img {
+      width: 60%;
+      opacity: 0.6;
+    }
+  }
+}

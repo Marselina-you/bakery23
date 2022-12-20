@@ -1,0 +1,66 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// подключения компонентов страницы
+@import "./components/header";
+@import "./components/navigation";
+@import "./components/burger";
+@import "./components/logo";
+@import "./components/hero";
+@import "./components/products";
+@import "./components/about";
+@import "./components/social";
+@import "./components/about-page";
+@import "./components/catalog-menu";
+@import "./components/catalog";
+@import "./components/accordion";
+@import "./components/actions";
+@import "./components/slider";
+
+@import "./components/user-cabinet";
+@import "./components/cabinet-navigation";
+@import "./components/delivery";
+@import "./components/buy";
+@import "./components/user-data";
+
+@import "./components/cart-navigation";
+@import "./components/cart-content";
+@import "./components/cart-empty";
+@import "./components/cart-slider";
+
+@import "./components/admin-header";
+@import "./components/admin-menu";
+@import "./components/admin-submenu";
+@import "./components/admin-products";
+@import "./components/admin-product";
+
+@import "./components/admin-category";
+@import "./components/admin-order";
+@import "./components/admin-table";
+
+@import "./components/admin-footer";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import "./components/footer";
+
+
+@import "./components/btn";
+
+
+
