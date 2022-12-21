@@ -19,6 +19,11 @@
   padding: 50px 0;
   font-family: var(--font-family-jost);
 
+  @include small-tablet {
+    grid-column: 12 span;
+    padding: 10px 0;
+  }
+
   &__top {
     margin-top: 20px;
   }
@@ -48,6 +53,11 @@
   grid-column: 6 span;
   padding: 50px 0;
 
+  @include small-tablet {
+    grid-column: 12 span;
+    padding: 10px 0;
+  }
+
   &__name {
     font-family: var(--font-family-segoe);
     font-size: 28px;
@@ -69,13 +79,23 @@
     font-family: var(--font-family-segoe);
     font-size: 25px;
     line-height: 150%;
-    color:var(--shadow-color)
+    color:var(--shadow-color);
+
+    @include small-tablet {
+      display: none;
+    }
+
+
   }
  }
 .catalog-right-spread {
   position: relative;
   width: 100%;
   height: 150px;
+
+  @include small-tablet {
+    display: none;
+  }
   &__item {
     position: absolute;
     padding: 30px 70px;

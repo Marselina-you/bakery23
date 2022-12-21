@@ -1,0 +1,33 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+
+
+}
+.noActivePagination {
+  padding: 5px;
+
+  a {
+    font-size: 20px;
+    color: var(--jaffa-color);
+
+    &:active {
+     color: var(--jaffa-color);
+    }
+    &:hover {
+      color: var(--jaffa-color-hover);
+    }
+    &:focus {
+      color: var(--jaffa-color-hover);
+    }
+  }
+}
+.activePagination {
+  padding: 5px;
+  a {
+    font-size: 20px;
+    color: var(---wood-bark-color);
+
+
+  }
+}
