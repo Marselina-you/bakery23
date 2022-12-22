@@ -1,0 +1,32 @@
+.checkout-page {
+  padding-bottom: 30px;
+  font-family: var(--font-family-tahoma);
+  color: var(--wood-bark-color);
+  background-color: var(--varden-color);
+
+  &__title {
+    display: flex;
+
+  }
+
+
+  &__span {
+    color: var(--mexican-red-color);
+  }
+  &__list {
+    grid-column: 3 span;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__item {
+    padding: 5px 0;
+  }
+  &__link {
+
+    font-family: var(--font-family-jost);
+    font-size: 22px;
+    text-align: center;
+    color: var(--millbrook-color);
+  }
+}

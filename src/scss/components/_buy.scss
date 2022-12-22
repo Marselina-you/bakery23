@@ -18,6 +18,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include tablet {
+      grid-column: 4 span;
+    }
+    @include small-tablet {
+      grid-column: 6 span;
+    }
+    @include mobile {
+      grid-column: 12 span;
+    }
   }
   &__order {
     margin: 0;

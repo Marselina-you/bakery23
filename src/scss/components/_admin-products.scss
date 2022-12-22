@@ -9,6 +9,10 @@
     grid-column: 4 span;
     display: flex;
 
+    @include mini-desktop  {
+      grid-column: 6 span;
+    }
+
     @include tablet {
       grid-column: 6 span;
       flex-direction: column;

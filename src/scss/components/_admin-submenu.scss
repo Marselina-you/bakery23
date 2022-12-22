@@ -8,6 +8,7 @@
     font-size: 24px;
 
 
+
     a {
       color: var(--jaffa-color);
       transition: color 0.3s ease-in-out;
@@ -29,7 +30,7 @@
 
   &__list {
     display: flex;
-    padding-bottom: 20px;
+    padding: 20px 0;
 
     @include small-tablet {
       flex-direction: column;
@@ -69,4 +70,10 @@
       color: var(--royal-blue-color);
     }
   }
+}
+.link--active {
+  color: var(--jaffa-color);
+}
+.link--unactive {
+  color: var(--kashmir-blue-color);
 }

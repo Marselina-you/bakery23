@@ -23,7 +23,7 @@
         <li class="admin-nav__item">
           <a href="#" class="admin-nav__link">
             <svg>
-              <use xlink:href="img/sprite.svg#admin-face"></use>
+              <use xlink:href="img/sprite.svg#admin"></use>
             </svg>
           <span>АдминПанель</span>
         </a></li>
@@ -34,7 +34,7 @@
           <span>Котобус</span></a></li>
         <li class="admin-nav__item"><a href="#" class="admin-nav__link">
           <svg>
-            <use xlink:href="img/sprite.svg#admin"></use>
+            <use xlink:href="img/sprite.svg#admin-to"></use>
           </svg>
           <span>На сайт</span></a></li>
 
@@ -76,6 +76,76 @@
   </div>
 </section>
 
+      <section class="order-view">
+  <div class="container-fluid">
+    <h2 class="admin__subtitle">Просмотр заказа #</h2>
+
+    <div class="order-view__block grid">
+      <h3 class="order-view__subtitle">Информация о заказе</h3>
+      <div class="order-view-names">
+        <ul class="order-view-names__list list-reset">
+          <li class="order-view__item"><div class="admin-order__caption">Id заказа:</div></li>
+            <li class="order-view__item"><div class="admin-order__caption">Имя покупателя:</div></li>
+            <li class="order-view__item"><div class="admin-order__caption">Телефон:</div></li>
+            <li class="order-view__item"><div class="admin-order__caption">Дата оформления:</div></li>
+            <li class="order-view__item"> <div class="admin-order__caption">Статус:</div></li>
+            <li class="order-view__item"> <div class="admin-order__caption">Комментарий:</div></li>
+          </ul>
+      </div>
+      <div class="order-view-values">
+        <ul class="order-view-values__list list-reset">
+          <li class="order-view__item"><div class="admin-order__value">56</div></li>
+            <li class="order-view__item"><div class="admin-order__value">Bobby</div></li>
+            <li class="order-view__item"><div class="admin-order__value">Т8965567</div></li>
+            <li class="order-view__item"><div class="admin-order__value">22.03.4221</div></li>
+            <li class="order-view__item"> <div class="admin-order__value">В обработке</div></li>
+            <li class="order-view__item"> <div class="admin-order__value">побыстрее</div></li>
+          </ul>
+      </div>
+      <h3 class="order-view__subtitle">Товары в заказе</h3>
+      <div class="order-view-names">
+        <ul class="order-view-names__list list-reset">
+          <li class="order-view__item"><div class="admin-order__caption">Артикул:</div></li>
+            <li class="order-view__item"><div class="admin-order__caption">Название:</div></li>
+            <li class="order-view__item"><div class="admin-order__caption">Сумма:</div></li>
+            <li class="order-view__item"><div class="admin-order__caption">Количество:</div></li>
+            </ul>
+      </div>
+      <div class="order-view-values">
+        <ul class="order-view-values__list list-reset">
+          <li class="order-view__item"><div class="admin-order__value">23</div></li>
+          <li class="order-view__item"><div class="admin-order__value capitalize">Батон</div></li>
+          <li class="order-view__item"><div class="admin-order__value">234</div></li>
+          <li class="order-view__item"><div class="admin-order__value">4</div></li>
+        </ul>
+      </div>
+      <ul class="order-view__links list-reset">
+        <li class="order-view__link"><a href="" class="admin-order__btn admin-order__btn btn--success btn btn-reset">выполнить</a></li>
+        <li class="order-view__link"><a href="" class="admin-order__btn admin-order__btn btn btn-reset btn--primary">изменить</a></li>
+        <li class="order-view__link"><a href="" class="admin-order__btn admin-order__btn btn btn-reset btn--danger">отменить</a></li>
+      </ul>
+      <div class="order-view__back">
+        <a href="/admin/order/" class="admin-menu-nav__link">Назад</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+      <section class="order-update">
+  <div class="container-fluid">
+    <h2 class="admin__subtitle">Редактирование заказа #</h2>
+    <form action="#" class="admin-product-form">
+
+<label class="admin-product-form__label">
+        <span class="admin-product-form__caption">Статус</span>
+    <input type="text" class="admin-product-form__input">
+  </label>
+
+  </form>
+  </div>
+</section>
+
       <section class="admin-order">
   <div class="container-fluid admin-order__container">
     <div class="admin-order__block grid">
@@ -87,7 +157,7 @@
           </li>
           <li class="admin-order__item">
             <div class="admin-order__caption">Имя покупателя:</div>
-            <div class="admin-order__value">Котобус</div>
+            <div class="admin-order__value capitalize">Котобус</div>
           </li>
           <li class="admin-order__item">
             <div class="admin-order__caption">Телефон:</div>
@@ -108,97 +178,25 @@
           </li>
         </ul>
       </article>
+</div>
+  </div>
+</section>
 
-      <article class="admin-order__article">
-        <ul class="admin-order__list list-reset">
-          <li class="admin-order__item">
-            <div class="admin-order__caption">Id заказа:</div>
-            <div class="admin-order__value">23</div>
-          </li>
-          <li class="admin-order__item">
-            <div class="admin-order__caption">Имя покупателя:</div>
-            <div class="admin-order__value">Котобус</div>
-          </li>
-          <li class="admin-order__item">
-            <div class="admin-order__caption">Телефон:</div>
-            <div class="admin-order__value">8(505)44044</div>
-          </li>
-          <li class="admin-order__item">
-            <div class="admin-order__caption">Дата оформления:</div>
-            <div class="admin-order__value">43.10.2044</div>
-          </li>
-          <li class="admin-order__item">
-            <div class="admin-order__caption">Статус:</div>
-            <div class="admin-order__value"> В обработке</div>
-          </li>
-          <li class="admin-order__item">
-            <button class="admin-order__btn admin-order__btn btn--success btn btn-reset">выполнить</button>
-            <button class="admin-order__btn admin-order__btn btn btn-reset btn--primary">изменить</button>
-            <button class="admin-order__btn admin-order__btn btn btn-reset btn--danger">отменить</button>
-          </li>
-        </ul>
-      </article>
-
-      <article class="admin-order__article">
-        <ul class="admin-order__list list-reset">
-          <li class="admin-order__item">
-            <div class="admin-order__caption">Id заказа:</div>
-            <div class="admin-order__value">23</div>
-          </li>
-          <li class="admin-order__item">
-            <div class="admin-order__caption">Имя покупателя:</div>
-            <div class="admin-order__value">Котобус</div>
-          </li>
-          <li class="admin-order__item">
-            <div class="admin-order__caption">Телефон:</div>
-            <div class="admin-order__value">8(505)44044</div>
-          </li>
-          <li class="admin-order__item">
-            <div class="admin-order__caption">Дата оформления:</div>
-            <div class="admin-order__value">43.10.2044</div>
-          </li>
-          <li class="admin-order__item">
-            <div class="admin-order__caption">Статус:</div>
-            <div class="admin-order__value"> В обработке</div>
-          </li>
-          <li class="admin-order__item">
-            <button class="admin-order__btn admin-order__btn btn--success btn btn-reset">выполнить</button>
-            <button class="admin-order__btn admin-order__btn btn btn-reset btn--primary">изменить</button>
-            <button class="admin-order__btn admin-order__btn btn btn-reset btn--danger">отменить</button>
-          </li>
-        </ul>
-      </article>
-      <article class="admin-order__article">
-        <ul class="admin-order__list list-reset">
-          <li class="admin-order__item">
-            <div class="admin-order__caption">Id заказа:</div>
-            <div class="admin-order__value">23</div>
-          </li>
-          <li class="admin-order__item">
-            <div class="admin-order__caption">Имя покупателя:</div>
-            <div class="admin-order__value">Котобус</div>
-          </li>
-          <li class="admin-order__item">
-            <div class="admin-order__caption">Телефон:</div>
-            <div class="admin-order__value">8(505)44044</div>
-          </li>
-          <li class="admin-order__item">
-            <div class="admin-order__caption">Дата оформления:</div>
-            <div class="admin-order__value">43.10.2044</div>
-          </li>
-          <li class="admin-order__item">
-            <div class="admin-order__caption">Статус:</div>
-            <div class="admin-order__value"> В обработке</div>
-          </li>
-          <li class="admin-order__item">
-            <button class="admin-order__btn admin-order__btn btn--success btn btn-reset">выполнить</button>
-            <button class="admin-order__btn admin-order__btn btn btn-reset btn--primary">изменить</button>
-            <button class="admin-order__btn admin-order__btn btn btn-reset btn--danger">отменить</button>
-          </li>
-        </ul>
-      </article>
-
+      <section class="admin-delete">
+  <div class="container-fluid">
+    <h2 class="admin__subtitle">Удаление товара #</h2>
+    <h3 class="admin-delete__quest">Вы действительно хотите удалить заказ #?</h3>
+    <div class="admin-delete__block">
+      <div class="admin-delete__item">
+        <form method="post">
+          <input type="submit" name="submit" value="Удалить" class="btn btn-reset btn--danger admin-delete__btn" />
+        </form>
+      </div>
+      <div class="admin-delete__item">
+      <a href="/order" class="btn admin-delete__btn btn-reset btn--success">нет</a></div>
     </div>
+  </div>
+  </div>
   </div>
 </section>
 
@@ -212,7 +210,7 @@
           <th class="admin-table__th">Действие</th>
         <tr class="admin-table__tr">
           <td class="admin-table__td">23</td>
-          <td class="admin-table__td">Черный хлеб</td>
+          <td class="admin-table__td capitalize">Черный хлеб</td>
           <td class="admin-table__td"><a href="" class="admin-table__link admin-table__link--danger">удалить</a>
             / <a href="" class="admin-table__link--active"> редактировать</a></td>
         <tr class="admin-table__tr">
@@ -332,7 +330,6 @@
     <footer class="admin-footer">
   <div class="container-fluid admin-footer__container">
     <div class="admin-footer__author">Alferova.studio.com</div>
-
   </div>
 </footer>
 

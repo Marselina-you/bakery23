@@ -1,0 +1,38 @@
+.order-view {
+  padding-bottom: 30px;
+  background-color: var(--blue-light-color);
+
+  &__subtitle {
+    grid-column: 12 span;
+    font-family: var(--font-family-tahoma);
+    font-size: 20px;
+    color: var(--kashmir-blue-color);
+  }
+
+  &__item {
+    display: flex;
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+  &__links {
+    grid-column: 12 span;
+    display: flex;
+
+  }
+  &__link {
+    padding-right: 20px;
+  }
+  &__back {
+    grid-column: 4 span;
+    display: flex;
+    justify-content: center;
+  }
+}
+.order-view-names {
+  grid-column: 6 span;
+
+}
+.order-view-values {
+  grid-column: 6 span;
+}
