@@ -12,6 +12,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_sliders_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/sliders.js */ "./src/js/components/sliders.js");
 /* harmony import */ var _components_accordion_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/accordion.js */ "./src/js/components/accordion.js");
 /* harmony import */ var _components_accordion_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_accordion_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_menu_out_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/menu-out.js */ "./src/js/components/menu-out.js");
+/* harmony import */ var _components_menu_out_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_menu_out_js__WEBPACK_IMPORTED_MODULE_2__);
+
 
 
 
@@ -184,6 +187,55 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+/***/ }),
+
+/***/ "./src/js/components/menu-out.js":
+/*!***************************************!*\
+  !*** ./src/js/components/menu-out.js ***!
+  \***************************************/
+/***/ (() => {
+
+const iconMenu = document.querySelector('.icon-menu');
+const menu = document.querySelector('.menu');
+const body = document.querySelector('body');
+const iconClose = document.querySelector('.icon-close');
+const pulOut = [{
+  right: '0px'
+}, {
+  transition: '600ms'
+}];
+const pullIn = {
+  right: '200px',
+  transition: '600px'
+};
+
+//console.log(iconMenu);
+console.log(menu);
+console.log(body);
+console.log(iconClose);
+//console.log();
+/* выбираем класс icon-menu и
+         добавляем метод click с функцией, вызываемой при клике */
+
+if (iconMenu) {
+  iconMenu.addEventListener('click', () => {
+    console.log(iconMenu);
+    //menu.animate(pullIn);
+    menu.style.right = '0px';
+    menu.style.transition = '600ms';
+    body.style.right = '285px';
+    body.style.transition = '600ms';
+  });
+}
+if (iconClose) {
+  iconClose.addEventListener('click', () => {
+    menu.style.right = '-285px';
+    menu.style.transition = '600ms';
+    body.style.right = '0px';
+    body.style.transition = '600ms';
+  });
+}
 
 /***/ }),
 

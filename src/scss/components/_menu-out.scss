@@ -1,0 +1,44 @@
+.menu {
+  position: fixed;
+  top: 0px;
+  right: -285px;
+  z-index: 1000;
+  width: 255px;
+  height: 100%;
+  background-color: var(--mexican-red-color);
+  opacity: 0.9;
+}
+.pulOut {
+  right: 0px;
+  transition: 600ms;
+}
+.pulIn {
+  right: 285px;
+  transition: 600ms;
+}
+.pulClose {
+  right: -285px;
+  transition: 600ms;
+}
+.icon-close {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 50px;
+  padding: 0 20px;
+
+  svg{
+    width: 40px;
+    fill: white;
+
+  }
+}
+  .menu-list {
+    line-height: 70px;
+    text-align: center;
+  }
+  .menu-list__item a{
+    font-family: var(--font-family-tahoma);
+    font-size: 25px;
+    color: var(--light-color);
+  }
+

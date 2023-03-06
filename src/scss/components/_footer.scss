@@ -17,35 +17,4 @@
       font-size: 16px;
     }
   }
-&__menu {
-  background-color: var(--mexican-red-color);
-  height: 100%;
-  position: fixed;
-  top: 0px;
-  right: -2px;
-  z-index: 1000;
-  width: 255px;
-  opacity: 0.9;
-}
-.icon-close {
-  display: flex;
-  justify-content: end;
-  margin-bottom: 50px;
-  padding: 0 20px;
-
-  svg{
-    width: 40px;
-    fill: white;
-
-  }
-}
-  .menu-list {
-    line-height: 70px;
-    text-align: center;
-  }
-  .menu-list__item a{
-    font-family: var(--font-family-tahoma);
-    font-size: 25px;
-    color: var(--light-color);
-  }
 }
