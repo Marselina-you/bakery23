@@ -2,10 +2,29 @@
   background-color: var(--varden-color);
 
   &__title {
-    margin: 0;
     padding: 40px 0;
-    font-family: var(--font-family-tahoma);
-    font-size: 28px;
-    color: var(--wood-bark-color);
+
   }
+}
+.title-h2 {
+  margin: 0;
+
+    font-family: var(--font-family-tahoma);
+    font-size: 24px;
+    color: var(--shadow-color);
+}
+.title-h3 {
+  margin: 0;
+
+  font-family: var(--font-family-tahoma);
+  font-size: 20px;
+
+  color: var(--wood-bark-color);
+}
+.title-h4 {
+  margin: 0;
+  color: var(--wood-bark-color);
+  font-size: 20px;
+  line-height: 150%;
+  text-transform: capitalize;
 }

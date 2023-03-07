@@ -8,21 +8,28 @@
 
 
      &__article {
+      &:not(:last-child){
         border-bottom: 1px solid gray;
       }
+     }
+
 }
 .cart-content-left {
   grid-column: 6 span;
   padding: 50px 0;
+
+  &__image {
+    img {
+      width: 50%;
+    }
+  }
 }
 .cart-content-right {
   grid-column: 6 span;
   padding: 50px 0;
 
   &__name {
-    font-family: var(--font-family-tahoma);
-    font-size: 24px;
-    color: var(--wood-bark-color);
+
   }
   &__weight {
     font-family: var(--font-family-jost);

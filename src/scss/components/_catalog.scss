@@ -3,7 +3,7 @@
   background-color: var( --varden-color);
 
   &__article {
-&:not(:last-child) {
+&:not(:nth-last-child(-n+2)) {
   border-bottom: 2px solid gray;
 }
 

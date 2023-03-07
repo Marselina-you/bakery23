@@ -1,9 +1,9 @@
 .menu {
   position: fixed;
   top: 0px;
-  right: -285px;
+  right: -300px;
   z-index: 1000;
-  width: 255px;
+  width: 300px;
   height: 100%;
   background-color: var(--mexican-red-color);
   opacity: 0.9;
@@ -13,11 +13,11 @@
   transition: 600ms;
 }
 .pulIn {
-  right: 285px;
+  right: 300px;
   transition: 600ms;
 }
 .pulClose {
-  right: -285px;
+  right: -300px;
   transition: 600ms;
 }
 .icon-close {
@@ -25,20 +25,35 @@
   justify-content: end;
   margin-bottom: 50px;
   padding: 0 20px;
+  transition: fill 0.3s ease-in-out;
+
 
   svg{
     width: 40px;
     fill: white;
 
+    &:hover {
+      fill: var(--shadow-color);
+    }
+
   }
+
+
 }
   .menu-list {
-    line-height: 70px;
+    line-height: 90px;
     text-align: center;
   }
-  .menu-list__item a{
+  .menu-list__item {
+    transition: color 0.8s ease-in-out;
+    a {
     font-family: var(--font-family-tahoma);
     font-size: 25px;
     color: var(--light-color);
+
+    &:hover {
+      color: var(--shadow-color);
+    }
   }
+}
 

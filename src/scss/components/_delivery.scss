@@ -2,19 +2,49 @@
   background-color: var(--varden-color);
 
   &__title {
-    margin: 0;
-    padding: 40px 0;
-    font-family: var(--font-family-tahoma);
-    font-size: 24px;
-    color: var(--shadow-color);
-  }
+    padding: 30px 0;
 
 
 }
-.delivery-block {
+&__suggestion {
+  display: flex;
+  align-items: center;
+  padding-bottom: var(--big-offset);
+a {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid var(--jaffa-color);
 
+
+}
+
+  span {
+    margin: 0;
+    padding: var(--small-offset);
+    color: var(--jaffa-color);
+    font-family: var(--font-family-tahoma);
+   font-size: 20px;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: var(--jaffa-color-hover);
+    }
+  }
+
+  svg {
+    width: 30px;
+    height: 30px;
+    fill: var(--jaffa-color);
+    transition: fill 0.3s ease-in-out;
+
+    &:hover {
+      fill: var(--jaffa-color-hover);
+    }
+  }
+
+}
   &__item {
-    grid-column: 3 span;
+    grid-column: 4 span;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,30 +59,30 @@
       grid-column: 12 span;
     }
   }
-  &__order {
+
+
+  &__name {
     margin: 0;
-    padding-bottom: 10px;
-    font-family: var(--font-family-tahoma);
-    font-size: 20px;
-    line-height: 150%;
+    padding-bottom: 20px;
+    font-family: var(--font-family-jost);
     color: var(--wood-bark-color);
-  }
-  &__status {
-    padding: 1px 30px;
-    font-family: var(--font-family-tahoma);
     font-size: 20px;
     line-height: 150%;
-    color: var(--light-color);
-    background-color: var(--royal-blue-color);
+  }
+  &__image {
+    display: flex;
+    justify-content: center;
 
-    &--middle {
-      background-color: var(--jaffa-color);
+    &:not(:last-child) {
+      padding-bottom: 20px;
     }
 
-    &--end {
-      background-color: var(--kashmir-blue-color);
+
+    img {
+      width: 60%;
     }
   }
+
   &__date {
     display: flex;
     align-items: center;
@@ -70,29 +100,34 @@
       color: var(--kashmir-blue-color);
     }
   }
-  &__title {
-    margin: 0;
-    padding-bottom: 20px;
-    color: var(--wood-bark-color);
+  &__status {
+    padding: 1px 30px;
+    font-family: var(--font-family-tahoma);
     font-size: 20px;
     line-height: 150%;
-  }
-  .article__item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  &__image {
-    display: flex;
-    justify-content: center;
+    color: var(--light-color);
+    background-color: var(--royal-blue-color);
 
-    &:not(:last-child) {
-      padding-bottom: 20px;
+    &--middle {
+      background-color: var(--jaffa-color);
     }
 
-
-    img {
-      width: 60%;
+    &--end {
+      background-color: var(--kashmir-blue-color);
     }
   }
+
+
+
+
+
+
+
+
 }
+
+
+
+
+
+

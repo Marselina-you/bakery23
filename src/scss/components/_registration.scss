@@ -1,0 +1,33 @@
+.registration {
+ margin: 0;
+ padding-top: var(--big-offset);
+
+  padding-bottom: 30px;
+  background-color: var(--varden-color);
+
+  &__wrap {
+    display: flex;
+    justify-content: center
+    ;
+  }
+
+  &__after {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  &__btn {
+    display: flex;
+
+  }
+  &__title {
+    margin: 0;
+  }
+}
+.title {
+  padding: 40px 0;
+  font-family: var(--font-family-tahoma);
+  font-size: 28px;
+  color: var(--wood-bark-color)
+}

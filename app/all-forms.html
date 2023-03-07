@@ -14,7 +14,7 @@
   <script defer src="js/main.js"></script>
 </head>
 
-<body>
+<body class="page-body">
   <div class="site-container">
     <header class="header">
   <div class="container">
@@ -58,21 +58,82 @@
 
     <main class="main">
 
-      <section class="logo">
-  <div class="container logo__container">
-    <div class="logo__left">
-      <div class="logo__logo">
-        <img loading="lazy" src="/img/logo.svg" class="" width="246" height="207">
-      </div>
-    </div>
-<div class="logo__right">
-  <div class="btn-reset icon-menu burger hero__burger" aria-label="Открыть меню">
-    <span class="burger__line"></span>
-    <span class="burger__line"></span>
-    <span class="burger__line"></span>
+      <section class="user-cabinet">
+  <div class="container">
+    <h1 class="user-cabinet__title title">Личный кабинет Котобус!</h1>
+    <nav class="menu-cabinet-nav" title="menu-cabinet">
+      <ul class="nav__list list-reset">
+        <li class="nav__item"><a href="#" class="nav__link">Доставки</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Покупки</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Корзина</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Мои данные</a></li>
+      </ul>
+    </nav>
+   <div class="user-cabinet__delivery delivery">
+      <article class="delivery__blok">
+        <h2 class="delivery__title title-h2 centered">Доставки</h2>
+        <ul class="delivery__list list-reset grid">
+          <li class="delivery__item">
+            <h3 class="delivery__title title-h3">Заказ N 3456</h3>
+            <span class="delivery__status">в пути</span>
+            <div class="delivery__date">Ожидается 23 апреля</div>
+            <div class="delivery__name">Бородинский хлебушок</div>
+            <div class="delivery__image"><img src="img/bread.png" alt=""></div>
+          </li>
+          <li class="delivery__item">
+            <h3 class="delivery__title title-h3">Заказ N 3456</h3>
+            <span class="delivery__status">в пути</span>
+            <div class="delivery__date">Ожидается 23 апреля</div>
+            <div class="delivery__name">Бородинский хлебушок</div>
+            <div class="delivery__image"><img src="img/bread.png" alt=""></div>
+          </li>
+        </ul>
+      </article>
+      <article class="delivery__blok">
+        <h2 class="delivery__title title-h2 centered">Доставки</h2>
+        <h3 class="delivery__title title-h3">Ближайших доставок нет</h3>
+
+      </article>
+
   </div>
+ <div class="user-cabinet__delivery delivery">
+    <article class="delivery__blok">
+      <h2 class="delivery__title title-h2 centered">Покупки</h2>
+      <ul class="delivery__list list-reset grid">
+        <li class="delivery__item">
+          <h3 class="delivery__title title-h3">Заказ N 3456</h3>
+
+          <div class="delivery__date delivery__date--end">получено</div>
+          <div class="delivery__name">Бородинский хлебушок</div>
+          <div class="delivery__image"><img src="img/bread.png" alt=""></div>
+        </li>
+        <li class="delivery__item">
+          <h3 class="delivery__title title-h3">Заказ N 3456</h3>
+
+          <div class="delivery__date delivery__date--end">получено</div>
+          <div class="delivery__name">Бородинский хлебушок</div>
+          <div class="delivery__image"><img src="img/bread.png" alt=""></div>
+        </li>
+
+      </ul>
+    </article>
+ <article class="delivery__blok">
+      <h2 class="delivery__title title-h2 centered">Покупки</h2>
+      <h3 class="delivery__title title-h3">У вас еще нет покупок</h3>
+      <div class="delivery__suggestion">
+        <a href="">
+          <span class="">В магазин</span>
+          <svg>
+            <use xlink:href="img/sprite.svg#ahead"></use>
+          </svg>
+
+        </a>
+      </div>
+
+    </article>
+
 </div>
-</div>
+  </div>
 </section>
 
       <section class="cart-navigation">
@@ -88,6 +149,58 @@
         </ul>
       </nav>
     </div>
+  </div>
+</section>
+
+      <section class="cart-content">
+  <div class="container cart-content__container">
+    <div class="cart-content__products">
+      <article class="cart-content__article grid">
+        <div class="cart-content-left">
+
+          <div class="cart-content-left__image">
+            <img src="img/catalog-1.png" alt="">
+          </div>
+          </div>
+        <div class="cart-content-right">
+          <h3 class="cart-content-right__name">Бородинский хлеб</h3>
+          <span class="cart-content-right__weight">700 gramm</span>
+          <div class="cart-content-right__quant">Количество: <span>2</span>
+          </div>
+          <div class="cart-content-right__value">124 P</div>
+  <button class="btn btn-reset btn--danger">удалить</button>
+        </div>
+      </article>
+      <article class="cart-content__article grid">
+        <div class="cart-content-left">
+
+          <div class="cart-content-left__image">
+            <img src="img/catalog-1.png" alt="">
+          </div>
+          </div>
+        <div class="cart-content-right">
+          <h3 class="cart-content-right__name">Бородинский хлеб</h3>
+          <span class="cart-content-right__weight">700 gramm</span>
+          <div class="cart-content-right__quant">Количество: <span>2</span>
+          </div>
+          <div class="cart-content-right__value">124 P</div>
+  <button class="btn btn-reset btn--danger">удалить</button>
+        </div>
+      </article>
+    </div>
+
+    <div class="cart-content-result">
+    <div class="cart-content-result__content">
+      <div class="cart-content-result__quant">Количество товаров
+        <strong class="cart-content-result__value">10</strong>
+      </div>
+      <div class="cart-content-result__summ">К оплате
+        <strong class="cart-content-result__value">1000 P</strong>
+      </div>
+      <button class="btn btn-reset btn--success">Оформить заказ
+      </button>
+    </div>
+  </div>
   </div>
 </section>
 
@@ -155,78 +268,6 @@
         </div>
       </form>
 
-  </div>
-</section>
-
-      <section class="result">
-  <div class="container">
-    <h2 class="cart__subtitle">Заказ создан</h2>
-    <div class="checkout-page__images grid">
-      <ul class="checkout-page__list list-reset">
-        <li class="checkout-page__item">
-          <img src="img/catalog-1.png" alt="order">
-        </li>
-        <li class="checkout-page__item">
-         <a href="" class="checkout-page__link">Батон</a>
-        </li>
-      </ul>
-     </div>
-     <div class="result__link">
-      <a href="#" class="btn btn-reset btn--primary">Вернуться к покупкам</a>
-     </div>
-
-  </div>
-</section>
-
-      <section class="cart-content">
-  <div class="container cart-content__container">
-    <div class="cart-content__products">
-      <article class="cart-content__article grid">
-        <div class="cart-content-left">
-
-          <div class="cart-content-left__image">
-            <img src="img/catalog-1.png" alt="">
-          </div>
-          </div>
-        <div class="cart-content-right">
-          <h3 class="cart-content-right__name">Бородинский хлеб</h3>
-          <span class="cart-content-right__weight">700 gramm</span>
-          <div class="cart-content-right__quant">Количество: <span>2</span>
-          </div>
-          <div class="cart-content-right__value">124 P</div>
-  <button class="btn btn-reset btn--danger">удалить</button>
-        </div>
-      </article>
-      <article class="cart-content__article grid">
-        <div class="cart-content-left">
-
-          <div class="cart-content-left__image">
-            <img src="img/catalog-1.png" alt="">
-          </div>
-          </div>
-        <div class="cart-content-right">
-          <h3 class="cart-content-right__name">Бородинский хлеб</h3>
-          <span class="cart-content-right__weight">700 gramm</span>
-          <div class="cart-content-right__quant">Количество: <span>2</span>
-          </div>
-          <div class="cart-content-right__value">124 P</div>
-  <button class="btn btn-reset btn--danger">удалить</button>
-        </div>
-      </article>
-    </div>
-
-    <div class="cart-content-result">
-    <div class="cart-content-result__content">
-      <div class="cart-content-result__quant">Количество товаров
-        <strong class="cart-content-result__value">10</strong>
-      </div>
-      <div class="cart-content-result__summ">К оплате
-        <strong class="cart-content-result__value">1000 P</strong>
-      </div>
-      <button class="btn btn-reset btn--success">Оформить заказ
-      </button>
-    </div>
-  </div>
   </div>
 </section>
 

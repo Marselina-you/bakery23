@@ -32,13 +32,13 @@ if (iconMenu) {
 //menu.animate(pullIn);
 menu.style.right = '0px';
 menu.style.transition = '600ms';
-body.style.right ='285px';
+body.style.right ='300px';
 body.style.transition = '600ms';
   })
 }
 if (iconClose) {
   iconClose.addEventListener('click', () => {
-    menu.style.right = '-285px';
+    menu.style.right = '-300px';
     menu.style.transition = '600ms';
     body.style.right ='0px';
     body.style.transition = '600ms';
