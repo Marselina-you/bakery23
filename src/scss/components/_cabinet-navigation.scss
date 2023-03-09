@@ -7,6 +7,11 @@
     color: var(--kashmir-blue-color);
     transition: color 0.3s ease-in-out;
 
+    @include mobile {
+      font-size: 20px;
+    }
+
+
     &:active {
       border: 1px solid var(--jaffa-color-hover);
 

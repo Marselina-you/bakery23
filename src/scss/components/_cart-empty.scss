@@ -4,5 +4,9 @@
 
   &__title {
     padding: 30px 0;
+
+    @include small-tablet {
+      padding: 20px 0;
+    }
   }
 }
