@@ -6,7 +6,8 @@
     padding: 60px 0;
 
     @include small-tablet {
-      padding: 20px 0;
+      padding: 0;
+      padding-bottom: 20px;
     }
   }
 
@@ -50,7 +51,10 @@
     background-repeat: no-repeat;
 
     @include small-tablet {
-      background-size: 90% 80%;
+      padding: 0;
+      height: 350px;
+      object-fit: cover;
+      background-size: 100% 80%;
       background-color: var(--varden-color);
     }
   }
@@ -62,7 +66,7 @@
     line-height: 150%;
 
     @include tablet {
-      margin-top: 20px;
+      margin-top: 40px;
       padding: 5px 0;
     }
   }
@@ -75,8 +79,10 @@
     font-size: 20px;
     line-height: 160%;
 
-    @include tablet {
-      margin-bottom: 30px;
+    @include mobile {
+      margin-bottom: 20px;
+      align-items: center;
+      width: 70%;
       font-size: 18px;
     }
   }

@@ -4,17 +4,21 @@
     display: flex;
     align-items: center;
     justify-content: start;
-    //padding: var(--small-offset) 0;
     width: 100%;
-
     background-color: transparent;
     cursor: pointer;
+
   }
 
   &__subtitle {
     font-family: var(--font-family-tahoma);
     font-size: 24px;
     color: var(--wood-bark-color);
+
+    @include small-tablet {
+      margin: 10px 0;
+      font-size: 20px;
+    }
   }
   &__descr {
     font-family: var(--font-family-jost);

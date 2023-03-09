@@ -28,8 +28,7 @@ const pullIn = {
 
 if (iconMenu) {
   iconMenu.addEventListener('click', () => {
-    console.log(iconMenu)
-//menu.animate(pullIn);
+    
 menu.style.right = '0px';
 menu.style.transition = '600ms';
 body.style.right ='300px';

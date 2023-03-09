@@ -220,8 +220,6 @@ console.log(iconClose);
 
 if (iconMenu) {
   iconMenu.addEventListener('click', () => {
-    console.log(iconMenu);
-    //menu.animate(pullIn);
     menu.style.right = '0px';
     menu.style.transition = '600ms';
     body.style.right = '300px';
@@ -258,6 +256,18 @@ if (sliderActions) {
     navigation: {
       nextEl: '.actions-slider-nav__next',
       prevEl: '.actions-slider-nav__prev'
+    },
+    breakpoints: {
+      76: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      768: {
+        slidesPerView: 2
+      },
+      1200: {
+        slidesPerView: 2
+      }
     }
   });
 }

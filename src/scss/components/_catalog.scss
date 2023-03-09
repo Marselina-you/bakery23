@@ -2,6 +2,11 @@
   padding: 50px 0;
   background-color: var( --varden-color);
 
+  @include small-tablet {
+
+    padding: 0;
+  }
+
   &__article {
 &:not(:nth-last-child(-n+2)) {
   border-bottom: 2px solid gray;
@@ -50,12 +55,13 @@
 
  }
  .catalog-right {
+  margin: 0;
   grid-column: 6 span;
   padding: 50px 0;
 
   @include small-tablet {
     grid-column: 12 span;
-    padding: 10px 0;
+    padding: 0;
   }
 
   &__name {
@@ -63,7 +69,11 @@
     font-size: 28px;
     line-height: 150%;
     text-transform: uppercase;
-    color: var( --mexican-red-color)
+    color: var( --mexican-red-color);
+
+    @include small-tablet {
+      font-size: 22px;
+    }
   }
   &__weight {
     font-family: var(--font-family-segoe);

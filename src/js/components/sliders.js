@@ -5,10 +5,24 @@ if (sliderActions) {
   const swiper = new Swiper(sliderActions, {
     slidesPerView: 2,
     spaceBetween: 70,
+
     navigation: {
       nextEl: '.actions-slider-nav__next',
       prevEl: '.actions-slider-nav__prev',
     },
+    breakpoints: {
+      76: {
+        slidesPerView: 2,
+        spaceBetween: 20
+
+      },
+      768: {
+        slidesPerView: 2
+      },
+      1200: {
+        slidesPerView: 2,
+      }
+    }
   });
 }
 

@@ -3,7 +3,8 @@
   background-color: var(--varden-color);
 
   @include small-tablet {
-    padding: 10px 0;
+    padding: 0;
+    padding-top: 30px;
   }
 &__item {
   grid-column: 4 span;
@@ -17,22 +18,14 @@
 &__image {
   display: inline-block;
   text-align: center;
-
-
-
-
-
-    img {
-
-      transition: rotate 0.9s ease-in-out;
-
-      &:hover {
-
-        transform: rotate(5deg);
+  img {
+    transition: rotate 0.9s ease-in-out;
+    &:hover {
+      transform: rotate(5deg);
       }
-      @include small-tablet {
-        width: 80%;
-      }
+     }
+     @include small-tablet {
+      display: none;
     }
 
 
@@ -61,6 +54,15 @@
     &:focus {
       color: var(--jaffa-color-hover);
     }
+    @include small-tablet {
+      margin: 0;
+      width: 100%;
+      border: 1 px solid var(--apricot-color);
+      border-radius: 4px;
+      padding: 20px;
+      text-align: center;
+      background-color: var(--apricot-color);
+    }
   }
   &__slogan {
     margin-bottom: 20px;
@@ -80,4 +82,10 @@
       display: none;
     }
   }
+  &__wrap {
+    @include small-tablet {
+      display: none;
+    }
+  }
+
 }

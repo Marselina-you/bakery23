@@ -15,7 +15,7 @@
 
 
     @include tablet {
-      margin-right: 20px;
+      margin-right: 10px;
     }
   }
 &__title {
@@ -23,6 +23,12 @@
   font-size: 25px;
   color: var(--wood-bark-color);
   text-shadow: white 2px 1px 10px;
+
+  @include small-tablet {
+    margin: 0;
+    margin-top: 10px;
+    font-size: 18px;
+  }
 }
 
 }
@@ -43,11 +49,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50px;
+
   padding: 50px 0;
 
   @include tablet {
-    padding: 30px 0;
+    padding: 0;
+    height: 20px;
   }
 
 
@@ -62,6 +69,7 @@
     border-radius: 5px;
     border-width: 25px 50px 25px 0;
     border-color: transparent #fff transparent transparent;
+    //background-color: white;
     transition: border-color 0.3s ease-in-out;
 
 
@@ -74,6 +82,24 @@
     }
     &:focus {
       border-color:  transparent var(--jaffa-color) transparent transparent;
+    }
+
+    @include small-tablet {
+      left: 36%;
+      width: 30px;
+      height: 30px;
+      border-width: 15px 30px 15px 10px;
+      border-color:  transparent var(--jaffa-color) transparent transparent;
+
+      &:active {
+        border-color:  transparent var(--jaffa-color-hover) transparent transparent;
+      }
+      &:hover {
+        border-color:  transparent var(--jaffa-color-hover) transparent transparent;
+      }
+      &:focus {
+        border-color:  transparent var(--jaffa-color-hover) transparent transparent;
+      }
     }
 }
     &__next {
@@ -89,6 +115,7 @@
       transition: border-color 0.3s ease-in-out;
 
 
+
       &:active {
 
         border-color:  transparent transparent transparent var(--jaffa-color);
@@ -98,6 +125,25 @@
       }
       &:focus {
         border-color:  transparent transparent transparent var(--jaffa-color);
+      }
+
+      @include small-tablet {
+        right: 36%;
+        width: 30px;
+        height: 30px;
+        //border-width: 15px 30px 15px 10px;
+        border-width: 15px 10px 15px 30px;
+        border-color: transparent transparent transparent var(--jaffa-color);
+
+        &:active {
+          border-color:  transparent transparent transparent var(--jaffa-color-hover);
+        }
+        &:hover {
+          border-color:  transparent transparent transparent var(--jaffa-color-hover);
+        }
+        &:focus {
+          border-color:  transparent transparent transparent var(--jaffa-color-hover);
+        }
       }
 
 

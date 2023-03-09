@@ -575,7 +575,7 @@ a {
 }
 @media (max-width: 1024px) {
   .hero__logo {
-    margin-top: 74px;
+    margin-top: 110px;
   }
 }
 .hero__logo img {
@@ -621,6 +621,11 @@ a {
 .hero__burger {
   margin-top: 95px;
 }
+@media (max-width: 1024px) {
+  .hero__burger {
+    margin-top: 110px;
+  }
+}
 
 .products {
   padding: 40px 0;
@@ -628,7 +633,8 @@ a {
 }
 @media (max-width: 768px) {
   .products {
-    padding: 10px 0;
+    padding: 0;
+    padding-top: 30px;
   }
 }
 .products__item {
@@ -656,8 +662,8 @@ a {
   transform: rotate(5deg);
 }
 @media (max-width: 768px) {
-  .products__image img {
-    width: 80%;
+  .products__image {
+    display: none;
   }
 }
 .products__link {
@@ -691,6 +697,17 @@ a {
 .products__title:focus {
   color: var(--jaffa-color-hover);
 }
+@media (max-width: 768px) {
+  .products__title {
+    margin: 0;
+    width: 100%;
+    border: 1 px solid var(--apricot-color);
+    border-radius: 4px;
+    padding: 20px;
+    text-align: center;
+    background-color: var(--apricot-color);
+  }
+}
 .products__slogan {
   margin-bottom: 20px;
   width: 70%;
@@ -711,6 +728,11 @@ a {
     display: none;
   }
 }
+@media (max-width: 768px) {
+  .products__wrap {
+    display: none;
+  }
+}
 
 .about {
   background-color: var(--varden-color);
@@ -723,7 +745,8 @@ a {
 }
 @media (max-width: 768px) {
   .about__block {
-    padding: 20px 0;
+    padding: 0;
+    padding-bottom: 20px;
   }
 }
 .about .about-images {
@@ -770,7 +793,11 @@ a {
 }
 @media (max-width: 768px) {
   .about__content {
-    background-size: 90% 80%;
+    padding: 0;
+    height: 350px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    background-size: 100% 80%;
     background-color: var(--varden-color);
   }
 }
@@ -783,7 +810,7 @@ a {
 }
 @media (max-width: 1024px) {
   .about__title {
-    margin-top: 20px;
+    margin-top: 40px;
     padding: 5px 0;
   }
 }
@@ -799,9 +826,13 @@ a {
   font-size: 20px;
   line-height: 160%;
 }
-@media (max-width: 1024px) {
+@media (max-width: 576px) {
   .about__text {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 70%;
     font-size: 18px;
   }
 }
@@ -1015,6 +1046,11 @@ a {
   padding: 50px 0;
   background-color: var(--varden-color);
 }
+@media (max-width: 768px) {
+  .catalog {
+    padding: 0;
+  }
+}
 .catalog__article:not(:nth-last-child(-n+2)) {
   border-bottom: 2px solid gray;
 }
@@ -1064,6 +1100,7 @@ a {
 }
 
 .catalog-right {
+  margin: 0;
   -ms-grid-column-span: 6;
   grid-column: 6 span;
   padding: 50px 0;
@@ -1072,7 +1109,7 @@ a {
   .catalog-right {
     -ms-grid-column-span: 12;
     grid-column: 12 span;
-    padding: 10px 0;
+    padding: 0;
   }
 }
 .catalog-right__name {
@@ -1081,6 +1118,11 @@ a {
   line-height: 150%;
   text-transform: uppercase;
   color: var(--mexican-red-color);
+}
+@media (max-width: 768px) {
+  .catalog-right__name {
+    font-size: 22px;
+  }
 }
 .catalog-right__weight {
   font-family: var(--font-family-segoe);
@@ -1154,6 +1196,12 @@ a {
   font-size: 24px;
   color: var(--wood-bark-color);
 }
+@media (max-width: 768px) {
+  .catalog-accordion__subtitle {
+    margin: 10px 0;
+    font-size: 20px;
+  }
+}
 .catalog-accordion__descr {
   font-family: var(--font-family-jost);
   font-size: 20px;
@@ -1217,7 +1265,8 @@ a {
 }
 @media (max-width: 768px) {
   .actions {
-    display: none;
+    background-image: none;
+    background-color: var(--varden-color);
   }
 }
 .actions__title {
@@ -1228,9 +1277,11 @@ a {
   color: var(--wood-bark-color);
   text-shadow: white 2px 3px 4px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .actions__title {
-    padding: 10px 0;
+    padding: 0;
+    padding-top: 10px;
+    font-size: 24px;
   }
 }
 .actions__date {
@@ -1241,6 +1292,13 @@ a {
   line-height: 150%;
   color: var(--light-color);
   text-shadow: var(--wood-bark-color) 2px 3px 4px;
+}
+@media (max-width: 768px) {
+  .actions__date {
+    padding: 0;
+    padding-bottom: 20px;
+    font-size: 24px;
+  }
 }
 
 .actions-slider {
@@ -1261,7 +1319,7 @@ a {
 }
 @media (max-width: 1024px) {
   .actions-slider__slide {
-    margin-right: 20px;
+    margin-right: 10px;
   }
 }
 .actions-slider__title {
@@ -1269,6 +1327,13 @@ a {
   font-size: 25px;
   color: var(--wood-bark-color);
   text-shadow: white 2px 1px 10px;
+}
+@media (max-width: 768px) {
+  .actions-slider__title {
+    margin: 0;
+    margin-top: 10px;
+    font-size: 18px;
+  }
 }
 
 .swiper {
@@ -1294,12 +1359,12 @@ a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 50px;
   padding: 50px 0;
 }
 @media (max-width: 1024px) {
   .actions-slider-nav {
-    padding: 30px 0;
+    padding: 0;
+    height: 20px;
   }
 }
 .actions-slider-nav__prev {
@@ -1325,6 +1390,24 @@ a {
 .actions-slider-nav__prev:focus {
   border-color: transparent var(--jaffa-color) transparent transparent;
 }
+@media (max-width: 768px) {
+  .actions-slider-nav__prev {
+    left: 36%;
+    width: 30px;
+    height: 30px;
+    border-width: 15px 30px 15px 10px;
+    border-color: transparent var(--jaffa-color) transparent transparent;
+  }
+  .actions-slider-nav__prev:active {
+    border-color: transparent var(--jaffa-color-hover) transparent transparent;
+  }
+  .actions-slider-nav__prev:hover {
+    border-color: transparent var(--jaffa-color-hover) transparent transparent;
+  }
+  .actions-slider-nav__prev:focus {
+    border-color: transparent var(--jaffa-color-hover) transparent transparent;
+  }
+}
 .actions-slider-nav__next {
   width: 50px;
   height: 50px;
@@ -1347,6 +1430,24 @@ a {
 }
 .actions-slider-nav__next:focus {
   border-color: transparent transparent transparent var(--jaffa-color);
+}
+@media (max-width: 768px) {
+  .actions-slider-nav__next {
+    right: 36%;
+    width: 30px;
+    height: 30px;
+    border-width: 15px 10px 15px 30px;
+    border-color: transparent transparent transparent var(--jaffa-color);
+  }
+  .actions-slider-nav__next:active {
+    border-color: transparent transparent transparent var(--jaffa-color-hover);
+  }
+  .actions-slider-nav__next:hover {
+    border-color: transparent transparent transparent var(--jaffa-color-hover);
+  }
+  .actions-slider-nav__next:focus {
+    border-color: transparent transparent transparent var(--jaffa-color-hover);
+  }
 }
 
 .user-cabinet-header {

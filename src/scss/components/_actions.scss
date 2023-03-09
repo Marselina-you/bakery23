@@ -4,7 +4,9 @@
   background-repeat: no-repeat;
 
   @include small-tablet {
-    display: none;
+    background-image: none;
+    background-color: var(--varden-color);
+
   }
 
   &__title {
@@ -15,8 +17,10 @@
     color: var(--wood-bark-color);
     text-shadow: white 2px 3px 4px;
 
-    @include tablet {
-      padding: 10px 0;
+    @include small-tablet {
+      padding: 0;
+      padding-top: 10px;
+      font-size: 24px;
     }
   }
   &__date {
@@ -27,6 +31,12 @@
     line-height: 150%;
     color: var(--light-color);
     text-shadow: var(--wood-bark-color) 2px 3px 4px;
+
+    @include small-tablet {
+      padding: 0;
+      padding-bottom: 20px;
+      font-size: 24px;
+    }
   }
 }
 
