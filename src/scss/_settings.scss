@@ -148,4 +148,72 @@ a {
 .capitalize {
   text-transform: capitalize;
 }
+.suggestion {
+  display: flex;
+  align-items: center;
+  transition: border-color color fill 0.3s ease-in-out;
+
+
+
+  svg {
+    width: 30px;
+    height: 30px;
+    fill: var(--jaffa-color);
+    transition: fill 0.3s ease-in-out;
+
+
+
+  }
+  a {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid var(--jaffa-color);
+}
+
+
+
+  span {
+    margin: 0;
+    padding: var(--small-offset);
+    color: var(--jaffa-color);
+    font-family: var(--font-family-tahoma);
+    font-size: 20px;
+    transition: color 0.3s ease-in-out;
+
+
+}
+  &:hover {
+    a {
+      border-color: var(--jaffa-color-hover);
+    }
+    span {
+      color: var(--jaffa-color-hover);
+    }
+    svg {
+      fill: var(--jaffa-color-hover);
+    }
+  }
+  &--subactive {
+    span {
+      color: var(--royal-blue-color);
+    }
+    svg {
+      fill: var(--royal-blue-color)
+    }
+    a {
+      border-style: none;
+    }
+    &:hover {
+      a {
+        border-color: var(--kashmir-blue-color);
+      }
+      span {
+        color: var(--kashmir-blue-color);
+      }
+      svg {
+        fill: var(--kashmir-blue-color);
+      }
+    }
+}
+}
 

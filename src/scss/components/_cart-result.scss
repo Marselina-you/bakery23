@@ -1,0 +1,19 @@
+.result {
+  padding-bottom: 30px;
+  background-color: var(--varden-color);
+
+  &__subtitle {
+    color: var(--wood-bark-color)
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+  }
+  &__suggestion--subactive {
+    padding: 0 30px;
+  }
+  &__suggestion {
+    padding: 30px 0;
+  }
+}

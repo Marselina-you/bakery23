@@ -1,4 +1,4 @@
-.checkout-page {
+.cart-checkout {
   padding-bottom: 30px;
   font-family: var(--font-family-tahoma);
   color: var(--wood-bark-color);
@@ -6,7 +6,10 @@
 
   &__title {
     display: flex;
-
+}
+  &__subtitle {
+    padding: 30px 0;
+    color: var(--wood-bark-color)
   }
 
 

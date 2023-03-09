@@ -263,12 +263,23 @@ if (sliderActions) {
 }
 if (cartSlider) {
   const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](cartSlider, {
-    slidesPerView: 4,
-    spaceBetween: 30,
+    slidesPerView: 1,
+    spaceBetween: 5,
     //loop: true,
     pagination: {
       el: ".swiper-pagination",
       clickable: true
+    },
+    breakpoints: {
+      576: {
+        slidesPerView: 2
+      },
+      768: {
+        slidesPerView: 3
+      },
+      1200: {
+        slidesPerView: 4
+      }
     }
   });
 }

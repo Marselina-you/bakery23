@@ -37,7 +37,7 @@
     width: 50%;
     height: 52px;
     border: none;
-    font-family: var(--font-family-jost);
+    font-family: var(--font-family-tahoma);
     font-size: 20px;
     line-height: 160%;
     color: #9a9ca5;
@@ -59,7 +59,8 @@
     width: 50%;
     height: 52px;
     border: none;
-    font-family: var(--font-family-jost);
+    padding: 0 10px;
+    font-family: var(--font-family-tahoma);
     font-size: 20px;
     line-height: 160%;
     color: #9a9ca5;
@@ -80,6 +81,7 @@
     width: 50%;
     height: 152px;
     border: none;
+    padding: 0 10px;
     font-size: 16px;
     line-height: 160%;
     color: #9a9ca5;

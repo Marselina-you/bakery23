@@ -5,6 +5,10 @@
 @import "settings";
 
 // подключения компонентов страницы
+
+@import "./components/title";
+
+
 @import "./components/header";
 @import "./components/navigation";
 @import "./components/burger";
@@ -20,16 +24,22 @@
 @import "./components/actions";
 @import "./components/slider";
 
-@import "./components/user-cabinet";
+@import "./components/user-cabinet-header";
 @import "./components/cabinet-navigation";
 @import "./components/delivery";
 @import "./components/buy";
+@import "./components/edit";
+@import "./components/login";
+@import "./components/registration";
 @import "./components/user-data";
 
 @import "./components/cart-navigation";
 @import "./components/cart-content";
 @import "./components/cart-empty";
 @import "./components/cart-slider";
+@import "./components/cart-checkout";
+@import "./components/cart-result";
+@import "./components/cart-products";
 @import "./components/pagination";
 
 @import "./components/admin-header";
@@ -47,11 +57,11 @@
 @import "./components/order-update";
 
 @import "./components/form";
-@import "./components/checkout";
-@import "./components/result";
 
-@import "./components/login";
-@import "./components/registration";
+
+
+
+
 @import "./components/menu-out";
 
 @import "./components/admin-footer";
