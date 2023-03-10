@@ -7,8 +7,6 @@
   height: 100%;
   background-color: var(--mexican-red-color);
   opacity: 0.9;
-
-
 }
 .pulOut {
   right: 0px;
@@ -17,45 +15,40 @@
 .pulIn {
   right: 300px;
   transition: 600ms;
-
-
 }
 .pulClose {
   right: -300px;
   transition: 600ms;
-
-
 }
 .icon-close {
   display: flex;
   justify-content: end;
   margin-bottom: 50px;
   padding: 0 20px;
-  transition: fill 0.3s ease-in-out;
 
 
   svg{
     width: 40px;
     fill: white;
+    transition: fill 0.3s ease-in-out;
+
 
     &:hover {
       fill: var(--shadow-color);
     }
-
-  }
-
-
+}
 }
   .menu-list {
     line-height: 90px;
     text-align: center;
   }
   .menu-list__item {
-    transition: color 0.8s ease-in-out;
+
     a {
     font-family: var(--font-family-tahoma);
     font-size: 25px;
     color: var(--light-color);
+    transition: color 0.8s ease-in-out;
 
     &:hover {
       color: var(--shadow-color);
@@ -79,8 +72,15 @@
     font-family: var(--font-family-tahoma);
     font-size: 25px;
     color: var(--light-color);
+    transition: color 0.8s ease-in-out;
 
     &:hover {
+      color: var(--shadow-color);
+    }
+    &:active {
+      color: var(--shadow-color);
+    }
+    &:focus {
       color: var(--shadow-color);
     }
     @include small-tablet {
@@ -95,34 +95,26 @@
       font-family: var(--font-family-tahoma);
       font-size: 22px;
       color: var(--light-color);
+      transition: color 0.8s ease-in-out;
 
       &:hover {
         color: var(--shadow-color);
       }
+      &:active {
+        color: var(--shadow-color);
+      }
+      &:focus {
+        color: var(--shadow-color);
+      }
+    }
+}
+&__item {
+  font-family: var(--font-family-jost);
+  font-size: 20px;
+  line-height: 150%;
+  color: var(--wood-bark-color);
     }
 
-
-  }
-
-
-    &__item {
-      font-family: var(--font-family-jost);
-      font-size: 20px;
-      line-height: 150%;
-      color: var(--wood-bark-color);
-    }
-    &__icon {
-      display: inline-block;
-      width: 18px;
-      height: 18px;
-      margin-top: 5px;
-      margin-left: var(--small-offset);
-      background-image: url("../img/cross.svg");
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      transition: transform 0.3s ease-out;
-    }
     &__content {
       overflow: hidden;
       padding: 20px 0;
@@ -131,9 +123,7 @@
       opacity: 0;
       transition: all 0.3s ease-out;
       will-change: max-height;
-
-
-    }
+}
     &__content--max {
       margin-left: 25%;
       max-width: 50%;
@@ -143,10 +133,7 @@
   .open .menu-accordion__content {
     padding-bottom: var(--small-offset);
     opacity: 1;
+}
 
-  }
-  .open .menu-accordion__icon {
-    transform: rotate(45deg);
-  }
 
 

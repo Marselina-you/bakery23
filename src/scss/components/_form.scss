@@ -19,8 +19,6 @@
     @include small-tablet {
       flex-direction: column;
     }
-
-
     &--title {
       color: var(--mexican-red-color);
     }
@@ -99,5 +97,4 @@
     justify-content: end;
     padding: 10px 0;
   }
-
 }

@@ -13,14 +13,12 @@
 
     @include small-tablet {
       flex-direction: column-reverse;
-
     }
-
   }
 
   &__author {
-    font-family: var(--font-family-jost);
     font-size: 18px;
+    font-family: var(--font-family-jost);
     color: var(--light-color);
 
     @include small-tablet {

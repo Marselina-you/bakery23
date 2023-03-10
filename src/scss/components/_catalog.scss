@@ -11,10 +11,7 @@
 &:not(:nth-last-child(-n+2)) {
   border-bottom: 2px solid gray;
 }
-
-  }
-
-
+}
 }
 .catalog-left {
   grid-column: 6 span;
@@ -28,11 +25,9 @@
     grid-column: 12 span;
     padding: 10px 0;
   }
-
   &__top {
     margin-top: 20px;
   }
-
   &__available {
     font-size: 20px;
     line-height: 160%;
@@ -44,16 +39,13 @@
     font-size: 20px;
     line-height: 160%;
     color: var(--wood-bark-color);
-
   }
   &__status {
     margin-bottom: 20px;
     font-size: 20px;
     line-height: 170%;
-    color: var(--jaffa-color);
   }
-
- }
+}
  .catalog-right {
   margin: 0;
   grid-column: 6 span;
@@ -65,10 +57,10 @@
   }
 
   &__name {
-    font-family: var(--font-family-segoe);
-    font-size: 28px;
     line-height: 150%;
     text-transform: uppercase;
+    font-family: var(--font-family-segoe);
+    font-size: 28px;
     color: var( --mexican-red-color);
 
     @include small-tablet {
@@ -76,27 +68,21 @@
     }
   }
   &__weight {
-    font-family: var(--font-family-segoe);
     font-size: 20px;
     line-height: 150%;
-    color: var(--wood-bark-color);
-
-  }
-
-
-
-  &__slogan {
     font-family: var(--font-family-segoe);
+    color: var(--wood-bark-color);
+  }
+  &__slogan {
     font-size: 25px;
     line-height: 150%;
+    font-family: var(--font-family-segoe);
     color:var(--shadow-color);
 
     @include small-tablet {
       display: none;
     }
-
-
-  }
+}
  }
 .catalog-right-spread {
   position: relative;
@@ -122,23 +108,16 @@
       z-index: 3;
       background-color: var(--hot-pink-color);
       top: 20px;
-
-
-
-    }
+}
     &--two {
       background-color:var(--bondi-blue-color);
       top: 6px;
       left: 180px;
-
-
-
-    }
+}
     &--three {
       background-color: var(--celery-color);
       top: 70px;
       left: 92px;
     }
-
-  }
+}
 }

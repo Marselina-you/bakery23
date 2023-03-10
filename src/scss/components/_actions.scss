@@ -6,15 +6,12 @@
   @include small-tablet {
     background-image: none;
     background-color: var(--varden-color);
-
   }
 
   &__title {
     margin: 0;
     padding: 40px 0;
-
-font-size: 35px;
-
+    font-size: 35px;
     text-shadow: white 2px 3px 4px;
 
     @include small-tablet {

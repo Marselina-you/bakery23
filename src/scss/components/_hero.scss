@@ -1,5 +1,5 @@
 .hero {
-  margin-top: -85px;
+  margin-top: -90px;
   height: 900px;
   background: url("../img/bg.png");
   color: var(--wood-bark-color);
@@ -55,9 +55,8 @@
   }
   &__subtitle {
     margin-top: 40px;
-    font-family: var(--font-family-tahoma);
-    font-size: 20px;
     line-height: 150%;
+    color: var(--wood-bark-color);
 
   }
   &__burger {

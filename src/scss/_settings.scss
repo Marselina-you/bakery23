@@ -216,3 +216,27 @@ a {
     }
 }
 }
+.link--unactive  {
+  a {
+    color: var(--jaffa-color);
+  }
+  svg {
+    fill: var(--jaffa-color)
+  }
+  pointer-events: none;
+}
+.link--active {
+  a {
+    color: var(--kashmir-blue-color);
+    &:hover {
+      color: var(--jaffa-color);
+    }
+  }
+  svg {
+    fill: var(--kashmir-blue-color);
+
+    &:hover {
+fill: var(--jaffa-color);
+    }
+  }
+}

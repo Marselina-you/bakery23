@@ -1,7 +1,6 @@
 .btn {
   display: inline-block;
   padding: 10px 20px;
-  //border: 1px solid var(--wood-bark-color);
   border-radius: 5px;
   font-family: var(--font-family-jost);
   font-size: 20px;
@@ -10,32 +9,28 @@
 
 }
 .btn--primary {
-  border: 1px solid var(--jaffa-color);
+
   background-color: var(--jaffa-color);
 
   &:active {
-    border: 1px solid var(--jaffa-color-hover);
+
     background-color: var(--jaffa-color-hover);
   }
   &:hover {
-    border: 1px solid var(--jaffa-color-hover);
+
     background-color: var(--jaffa-color-hover);
   }
   &:focus {
-    border: 1px solid var(--jaffa-color-hover);
     background-color: var(--jaffa-color-hover);
   }
 
 
 }
 .btn--danger {
-  border: 1px solid var(--red-color);
-
   font-size: 18px;
   background-color: var(--red-color);
 
   &:active {
-    border: 1px solid var(--red-color-hover);
     background-color: var(--red-color);
   }
   &:hover {
@@ -44,15 +39,11 @@
   &:focus {
     background-color: var(--red-color-hover);
   }
-
-
 }
 .btn--success {
-  border: 1px solid var(--genoa-color);
   background-color: var(--genoa-color);
 
   &:active {
-    border: 1px solid var(--genoa-color-hover);
     background-color: var(--genoa-color);
   }
   &:hover {
@@ -61,6 +52,4 @@
   &:focus {
     background-color: var(--genoa-color-hover);
   }
-
-
 }

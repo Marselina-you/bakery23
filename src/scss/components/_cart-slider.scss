@@ -24,7 +24,6 @@
     transition: border-color 0.3s ease-in-out;
 
     &:active {
-
       border-color:  transparent var(--jaffa-color) transparent transparent;
     }
     &:hover {
@@ -48,7 +47,6 @@
 
 
       &:active {
-
         border-color:  transparent transparent transparent var(--jaffa-color);
       }
       &:hover {
@@ -81,14 +79,9 @@
       margin: 0 auto;
       width: 80%;
       height: auto;
-      //object-fit: contain;
-      }
-     //
-    }
-
-
-
-  &__price {
+}
+  }
+&__price {
     font-family: var(--font-family-tahoma);
     font-size: 30px;
     color: var(--mexican-red-color);
@@ -97,26 +90,22 @@
     font-family: var(--font-family-tahoma);
     font-size: 20px;
     line-height: 170%;
-    //color: var(--jaffa-color);
+
   }
 
   &__slide {
-    //margin-right: 50px;
-
     grid-column: 4 span;
     grid-row: 1 span;
     display: block;
     justify-content: center;
     align-items: center;
     text-align: center;
-    //border: 1px solid black;
+
   }
 &__title {
   margin: 0;
   margin-bottom: 20px;
-
-  //text-shadow: white 2px 1px 10px;
-  a {
+a {
     font-family: var( --font-family-tahoma);
     font-size: 25px;
     color: var(--wood-bark-color);
@@ -126,6 +115,7 @@
       color: var(--jaffa-color);
     }
     &:active {
+      border: 1px solid var(--jaffa-color);
       color: var(--jaffa-color);
     }
     &:focus {

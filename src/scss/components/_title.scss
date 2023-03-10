@@ -41,6 +41,7 @@
   line-height: 150%;
 
 }
+//for status
 .royal-blue-color {
   color: var( --royal-blue-color);
 }
@@ -52,4 +53,14 @@
 }
 .hot-pink-color {
   color: var(--hot-pink-color);
+}
+//for date
+.color--wait {
+  color: var(--genoa-color);
+}
+.color--get {
+  color: var(--red-color);
+}
+.color--end {
+  color: var(--shadow-color);
 }

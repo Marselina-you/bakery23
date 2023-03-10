@@ -25,7 +25,9 @@
 
   @include small-tablet {
     margin: 0;
-    margin-top: 10px;
+    padding: 0;
+    //margin-top: 10px;
+    padding-top: 10px;
     font-size: 18px;
   }
 }

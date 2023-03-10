@@ -1,9 +1,8 @@
 .admin-order {
   background-color: var(--blue-light-color);
 &__block {
-
-    padding-top: 40px;
-    padding-bottom: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   }
   &__article {
     grid-column: 3 span;
@@ -32,31 +31,20 @@
       border-bottom: 1px solid gray;
       margin-bottom: 10px;
     }
-
-
-
-  }
+}
   &__caption {
     font-family: var(--font-family-tahoma);
     font-size: 20px;
     color: black;
-
-  }
+}
   &__value {
     font-family: var(--font-family-jost);
     font-size: 20px;
-
-
     color: black;
   }
-
-  .admin-order__btn {
+.admin-order__btn {
     padding: 5px 10px;
     font-size: 18px;
-
-  }
-
-
-
+}
 }
 

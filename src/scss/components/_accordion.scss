@@ -7,12 +7,9 @@
     width: 100%;
     background-color: transparent;
     cursor: pointer;
-
-  }
-
+}
   &__subtitle {
-    font-family: var(--font-family-tahoma);
-    font-size: 24px;
+    padding: 10px 0;
     color: var(--wood-bark-color);
 
     @include small-tablet {
@@ -25,9 +22,7 @@
     font-size: 20px;
     color: var(--wood-bark-color);
   }
-
-
-    &__item {
+  &__item {
       font-family: var(--font-family-jost);
       font-size: 20px;
       line-height: 150%;

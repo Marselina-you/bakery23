@@ -19,9 +19,11 @@
   display: inline-block;
   text-align: center;
   img {
-    transition: rotate 0.9s ease-in-out;
+    filter: brightness(80%);
+    transition: filter 0.9s ease-in-out;
     &:hover {
-      transform: rotate(5deg);
+      //transform: rotate(5deg);
+      filter: brightness(100%);
       }
      }
      @include small-tablet {

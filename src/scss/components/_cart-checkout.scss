@@ -6,8 +6,6 @@
 
   &__title {
     display: flex;
-
-
 }
   &__subtitle {
     padding: 30px 0;
@@ -18,9 +16,7 @@
     }
 
   }
-
-
-  &__span {
+&__span {
     color: var(--mexican-red-color);
   }
   &__list {
@@ -32,11 +28,10 @@
   &__item {
     padding: 5px 0;
   }
-  &__link {
-
-    font-family: var(--font-family-jost);
-    font-size: 22px;
-    text-align: center;
-    color: var(--millbrook-color);
-  }
+  //&__link {
+    //font-family: var(--font-family-jost);
+    //font-size: 22px;
+    //text-align: center;
+    //color: var(--millbrook-color);
+  //}
 }

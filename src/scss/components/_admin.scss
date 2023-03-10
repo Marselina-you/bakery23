@@ -1,17 +1,10 @@
 .admin {
 
   &__title {
-
     padding: 20px 0;
 
-
 &--active {
-
-    color: var(--jaffa-color);
-
-
-
-
+  color: var(--jaffa-color);
 }
 
     a {
@@ -29,18 +22,6 @@
         color: var(--royal-blue-color);
       }
     }
+}
 
-
-  }
-
-
-  &__subtitle {
-    margin: 0;
-    margin: 0;
-    padding: 20px 0;
-    font-family: var(--font-family-tahoma);
-    font-size: 24px;
-    color: var(--jaffa-color);
-    grid-column: 12 span;
-  }
 }
