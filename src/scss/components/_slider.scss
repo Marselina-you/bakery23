@@ -19,9 +19,8 @@
     }
   }
 &__title {
-  font-family: var( --font-family-tahoma);
+  padding: 30px 0;
   font-size: 25px;
-  color: var(--wood-bark-color);
   text-shadow: white 2px 1px 10px;
 
   @include small-tablet {

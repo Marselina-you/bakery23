@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Bakery2023</title>
+
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+  <div class="site-container">
+    <section class="admin-header">
+  <div class="container-fluid">
+    <nav class="admin-nav admin-header__nav" title="">
+      <ul class="admin-nav__list admin-header__list list-reset">
+        <li class="admin-nav__item">
+          <a href="#" class="admin-nav__link">
+            <svg>
+              <use xlink:href="img/sprite.svg#admin"></use>
+            </svg>
+          <span>АдминПанель</span>
+        </a></li>
+        <li class="admin-nav__item"><a href="#" class="admin-nav__link">
+          <svg>
+            <use xlink:href="img/sprite.svg#to-site"></use>
+          </svg>
+          <span>Котобус</span></a></li>
+        <li class="admin-nav__item"><a href="#" class="admin-nav__link">
+          <svg>
+            <use xlink:href="img/sprite.svg#admin-to"></use>
+          </svg>
+          <span>На сайт</span></a></li>
+
+      </ul>
+    </nav>
+  </div>
+</section>
+
+    <main class="main">
+
+      <section class="admin-menu">
+  <div class="container-fluid">
+    <h1 class="admin-menu__title title">Вы вошли в АдминПанель как Котобус</h1>
+    <nav class="admin-menu-nav" title="menu-admin">
+      <ul class="admin-menu-nav__list list-reset">
+        <li class="admin-menu-nav__item"><a href="#" class="admin-menu-nav__link">Управление товарами</a></li>
+        <li class="admin-menu-nav__item"><a href="#" class="admin-menu-nav__link admin-menu-nav__link--active">Управление категориями</a></li>
+        <li class="admin-menu-nav__item"><a href="#" class="admin-menu-nav__link">Управление заказами</a></li>
+
+      </ul>
+    </nav>
+  </div>
+</section>
+
+      <section class="admin-category-edit admin-category">
+  <div class="container-fluid">
+    <h2 class="admin__title admin__title--active subtitle">Редактирование категории</h2>
+    <form action="#" class="admin-product-form">
+
+        <label class="admin-product-form__label">
+          <span class="admin-product-form__caption">Наименование</span>
+        <input type="text" class="admin-product-form__input" value="Черный хлеб">
+      </label>
+
+        <label class="admin-product-form__label">
+          <span class="admin-product-form__caption">Sort-order</span>
+      <input type="text" class="admin-product-form__input" value="3">
+    </label>
+
+        <label class="admin-product-form__label">
+          <span class="admin-product-form__caption">Status</span>
+      <input type="text" class="admin-product-form__input" value="Status">
+    </label>
+    <label class="admin-product-form__label">
+      <span class="admin-product-form__caption">Style-1</span>
+  <input type="text" class="admin-product-form__input" value="Style-2">
+</label>
+<label class="admin-product-form__label">
+  <span class="admin-product-form__caption">Style-2</span>
+<input type="text" class="admin-product-form__input" value="Style-2">
+</label>
+
+      <div class="admin-product-form__btn">
+        <button class="btn btn-reset btn--success">Сохранить изменения
+        </button>
+      </div>
+
+    </form>
+  </div>
+</section>
+
+    </main>
+    <footer class="admin-footer">
+  <div class="container-fluid admin-footer__container">
+    <div class="admin-footer__author">Alferova.studio.com</div>
+  </div>
+</footer>
+
+  </div>
+</body>
+
+</html>

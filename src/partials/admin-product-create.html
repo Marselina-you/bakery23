@@ -1,12 +1,16 @@
 <section class="admin-product">
-  <div class="container-fluid grid">
+
+  <div class="container-fluid">
+    <h2 class="admin__title admin__title--active subtitle">Добавление товара</a></h2>
     <form action="#" class="admin-product-form">
 
         <label class="admin-product-form__label">
           <span class="admin-product-form__caption">Категория</span>
         <select name="category_id" class="admin-product-form__select">
+          <option value="черный хлеб" name=""></option>
           <option value="черный хлеб" name="">черный хлеб</option>
-          <option value="черный хлеб" name="">черный хлеб</option>
+          <option value="черный хлеб" name="">пирожные</option>
+          <option value="черный хлеб" name="">белая выпечка</option>
         </select></label>
 
 
@@ -80,31 +84,39 @@
         <label class="admin-product-form__label admin-product-form__label--title">
           <span class="admin-product-form__caption">Статус</span>
         <select name="category_id" class="admin-product-form__select">
-          <option value="черный хлеб" name="">бестселлер</option>
-          <option value="черный хлеб" name="">уже в продаже</option>
+          <option value="черный хлеб" name=""></option>
+          <option value="черный хлеб" name="">Бестселлер</option>
+          <option value="черный хлеб" name="">Уже в продаже</option>
+          <option value="черный хлеб" name="">Новинка!</option>
+          <option value="черный хлеб" name="">Выгодно</option>
         </select>
       </label>
 
-      <div class="admin-product-radio">
+
+      <label class="admin-product-form__label">
         <span class="admin-product-form__caption">Наличие</span>
-        <legend class="admin-product-radio__legend">
-          <input type="radio" id="huey" name="drone" class="admin-product-radio__input" value="huey" checked>
-            <label class="admin-product-radio__label">В наличии</label>
-            <input type="radio" id="dewey" class="admin-product-radio__input" name="drone" value="dewey">
-            <label class="admin-product-radio__label">Нет</label>
-          </legend>
-      </div>
-       <div class="admin-product-radio">
-      <span class="admin-product-form__caption">Слайдер</span>
-      <legend class="admin-product-radio__legend">
-        <input type="radio" id="huey" name="drone" class="admin-product-radio__input" value="huey" checked>
-          <label class="admin-product-radio__label">true</label>
-          <input type="radio" id="dewey" class="admin-product-radio__input" name="drone" value="dewey">
-          <label class="admin-product-radio__label">false</label>
-        </legend>
-    </div>
-
-
+        <select name="nal" class="admin-product-form__select">
+          <option value=""></option>
+          <option value="В наличии">В наличии</option>
+          <option value="Нет">Нет</option>
+        </select>
+      </label>
+      <label class="admin-product-form__label">
+        <span class="admin-product-form__caption">Слайдер</span>
+        <select name="recommendation" class="admin-product-form__select">
+          <option value=""></option>
+          <option value="1">Да</option>
+          <option value="0">Нет</option>
+        </select>
+      </label>
+      <label class="admin-product-form__label">
+        <div class="admin-product-form__caption">Изображение товара</div>
+        <input type="file" name="new_picture" placeholder="" value="">
+      </label>
+<div class="admin-product-form__btn">
+  <button class="btn btn-reset btn--success">Сохранить
+  </button>
+</div>
 
 
     </form>

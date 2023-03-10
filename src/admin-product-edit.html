@@ -3,12 +3,15 @@
 
 @include('partials/head.html')
 
-<body class="page-body">
+<body>
   <div class="site-container">
-    @include('partials/header.html')
+    @include('partials/admin-header.html')
     <main class="main">
 
       @include('partials/admin-menu.html')
+      @include('partials/admin-submenu.html')
+      @include('partials/admin-product-edit.html')
+
 
 
 
@@ -17,9 +20,10 @@
 
 
     </main>
-    @include('partials/footer.html')
-    <!-- @include('html/h1.html') пример include -->
+    @include('partials/admin-footer.html')
+
   </div>
 </body>
 
 </html>
+

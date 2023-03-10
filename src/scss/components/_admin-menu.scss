@@ -4,12 +4,8 @@
   &__title {
     margin: 0;
     padding: 50px 0;
-    font-family: var(--font-family-tahoma);
-    font-size: 30px;
 
-    @include small-tablet {
-      font-size: 25px;
-    }
+
 
 
   }
@@ -17,6 +13,7 @@
 .admin-menu-nav {
   &__list {
     display: flex;
+    padding-bottom: 20px;
 
     @include small-tablet {
       flex-direction: column;
@@ -36,7 +33,7 @@
 }
 
 &__link {
-  font-family: var(--font-family-jost);
+  font-family: var(--font-family-tahoma);
   font-size: 24px;
   color: var(--kashmir-blue-color);
   transition: color 0.3s ease-in-out;

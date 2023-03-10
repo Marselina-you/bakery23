@@ -818,7 +818,7 @@ a {
 .about__title {
   margin-top: 5%;
   padding: 20px 0;
-  font-family: var(--font-family-jost);
+  font-family: var(--font-family-tahoma);
   font-size: 28px;
   line-height: 150%;
 }
@@ -1099,7 +1099,7 @@ a {
   font-weight: bold;
   font-size: 20px;
   line-height: 160%;
-  color: --wood-bark-color;
+  color: var(--wood-bark-color);
 }
 .catalog-left__status {
   margin-bottom: 20px;
@@ -1281,9 +1281,7 @@ a {
 .actions__title {
   margin: 0;
   padding: 40px 0;
-  font-family: var(--font-family-tahoma);
   font-size: 35px;
-  color: var(--wood-bark-color);
   text-shadow: white 2px 3px 4px;
 }
 @media (max-width: 768px) {
@@ -1332,9 +1330,8 @@ a {
   }
 }
 .actions-slider__title {
-  font-family: var(--font-family-tahoma);
+  padding: 30px 0;
   font-size: 25px;
-  color: var(--wood-bark-color);
   text-shadow: white 2px 1px 10px;
 }
 @media (max-width: 768px) {
@@ -2191,19 +2188,13 @@ a {
 .admin-menu__title {
   margin: 0;
   padding: 50px 0;
-  font-family: var(--font-family-tahoma);
-  font-size: 30px;
-}
-@media (max-width: 768px) {
-  .admin-menu__title {
-    font-size: 25px;
-  }
 }
 
 .admin-menu-nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-bottom: 20px;
 }
 @media (max-width: 768px) {
   .admin-menu-nav__list {
@@ -2223,7 +2214,7 @@ a {
   }
 }
 .admin-menu-nav__link {
-  font-family: var(--font-family-jost);
+  font-family: var(--font-family-tahoma);
   font-size: 24px;
   color: var(--kashmir-blue-color);
   -webkit-transition: color 0.3s ease-in-out;
@@ -2247,27 +2238,6 @@ a {
 
 .admin-submenu {
   background-color: var(--blue-light-color);
-}
-.admin-submenu__title {
-  margin: 0;
-  padding: 20px 0;
-  font-family: var(--font-family-tahoma);
-  font-size: 24px;
-}
-.admin-submenu__title a {
-  color: var(--jaffa-color);
-  -webkit-transition: color 0.3s ease-in-out;
-  -o-transition: color 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out;
-}
-.admin-submenu__title a:active {
-  border: 1px solid var(--jaffa-color-hover);
-}
-.admin-submenu__title a:hover {
-  color: var(--jaffa-color-hover);
-}
-.admin-submenu__title a:focus {
-  color: var(--jaffa-color-hover);
 }
 .admin-submenu__list {
   display: -webkit-box;
@@ -2293,7 +2263,7 @@ a {
   }
 }
 .admin-submenu__link {
-  font-family: var(--font-family-jost);
+  font-family: var(--font-family-tahoma);
   font-size: 24px;
   color: var(--kashmir-blue-color);
 }
@@ -2497,7 +2467,8 @@ a {
   width: 50%;
   height: 52px;
   border: none;
-  font-family: var(--font-family-jost);
+  padding-left: 10px;
+  font-family: var(--font-family-tahoma);
   font-size: 20px;
   line-height: 160%;
   color: #9a9ca5;
@@ -2519,7 +2490,8 @@ a {
   width: 50%;
   height: 52px;
   border: none;
-  font-family: var(--font-family-jost);
+  padding-left: 10px;
+  font-family: var(--font-family-tahoma);
   font-size: 20px;
   line-height: 160%;
   color: #9a9ca5;
@@ -2541,8 +2513,10 @@ a {
   width: 50%;
   height: 152px;
   border: none;
-  font-size: 16px;
+  padding-left: 10px;
+  font-size: 20px;
   line-height: 160%;
+  font-family: var(--font-family-tahoma);
   color: #9a9ca5;
 }
 @media (max-width: 1024px) {
@@ -2555,9 +2529,19 @@ a {
     width: 100%;
   }
 }
+.admin-product-form__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: end;
+  padding: 20px 0;
+}
 
 .admin-category {
   margin: 0;
+  min-height: calc(100vh - 335px);
   background-color: var(--blue-light-color);
 }
 .admin-category__block {
@@ -2682,10 +2666,6 @@ a {
   color: var(--jaffa-color-hover);
 }
 
-.admin-delete {
-  padding: 50px 0;
-  background-color: var(--blue-light-color);
-}
 .admin-delete__quest {
   padding-bottom: 20px;
   font-family: var(--font-family-tahoma);
@@ -2700,6 +2680,27 @@ a {
   padding-right: 20px;
 }
 
+.admin__title {
+  padding: 20px 0;
+}
+.admin__title--active {
+  color: var(--jaffa-color);
+}
+.admin__title a {
+  color: var(--kashmir-blue-color);
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+.admin__title a:active {
+  border: 1px solid var(--royal-blue-color);
+}
+.admin__title a:hover {
+  color: var(--royal-blue-color);
+}
+.admin__title a:focus {
+  color: var(--royal-blue-color);
+}
 .admin__subtitle {
   margin: 0;
   margin: 0;
@@ -3052,7 +3053,7 @@ a {
 }
 
 .admin-footer {
-  padding: 30px;
+  padding: 40px;
   background-color: var(--blue-color);
 }
 .admin-footer__author {
