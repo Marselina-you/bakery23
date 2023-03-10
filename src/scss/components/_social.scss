@@ -2,7 +2,11 @@
 
   &__list {
     display: flex;
-    justify-content: flex-end;
+
+    @include small-tablet {
+
+
+    }
 
   }
   &__item {
@@ -11,9 +15,7 @@
     &:not(:last-child) {
       margin-right: 50px;
 
-      @include small-tablet {
-        margin-right: 15px;
-      }
+
     }
 
 

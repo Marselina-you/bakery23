@@ -57,11 +57,26 @@
     @include small-tablet {
       margin: 0;
       width: 100%;
-      border: 1 px solid var(--apricot-color);
+      //border: 1 px solid var(--apricot-color);
       border-radius: 4px;
       padding: 20px;
       text-align: center;
       background-color: var(--apricot-color);
+      transition: background-color color 0.3s ease-in-out ;
+
+      &:active {
+        background-color: var(--jaffa-color-hover);
+        color: var(--light-color);
+
+      }
+      &:hover {
+        background-color: var(--jaffa-color-hover);
+        color: var(--light-color);
+      }
+      &:focus {
+        background-color: var(--jaffa-color-hover);
+        color: var(--light-color);
+      }
     }
   }
   &__slogan {

@@ -15,12 +15,14 @@
 
   &:active {
     border: 1px solid var(--jaffa-color-hover);
-    background-color: var(--jaffa-color);
+    background-color: var(--jaffa-color-hover);
   }
   &:hover {
+    border: 1px solid var(--jaffa-color-hover);
     background-color: var(--jaffa-color-hover);
   }
   &:focus {
+    border: 1px solid var(--jaffa-color-hover);
     background-color: var(--jaffa-color-hover);
   }
 
