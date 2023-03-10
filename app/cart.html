@@ -57,6 +57,149 @@
 </header>
 
     <main class="main">
+      <section class="cart-navigation">
+  <div class="container">
+    <h1 class="cart-navigation__title title">Корзина</h1>
+    <div class="cart-navigation__content">
+      <a href="#" class="cart-navigation__link">Перейти в каталог</a>
+      <nav class="menu-cabinet-nav" title="menu-cart">
+        <ul class="nav__list list-reset">
+          <li class="nav__item"><a href="#" class="nav__link">Пирожные</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Белая выпечка</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Черный хлеб</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</section>
+
+      <section class="cart-content">
+  <div class="container cart-content__container">
+    <div class="cart-content__products">
+      <article class="cart-content__article grid">
+        <div class="cart-content-left">
+
+          <div class="cart-content-left__image">
+            <img src="img/catalog-1.png" alt="">
+          </div>
+          </div>
+        <div class="cart-content-right">
+          <h3 class="cart-content-right__name message">Бородинский хлеб</h3>
+          <span class="cart-content-right__weight">700 gramm</span>
+          <div class="cart-content-right__quant">Количество: <span>2</span>
+          </div>
+          <div class="cart-content-right__value">124 P</div>
+  <button class="btn btn-reset btn--danger">удалить</button>
+        </div>
+      </article>
+      <article class="cart-content__article grid">
+        <div class="cart-content-left">
+
+          <div class="cart-content-left__image">
+            <img src="img/catalog-1.png" alt="">
+          </div>
+          </div>
+        <div class="cart-content-right">
+          <h3 class="cart-content-right__name message">Бородинский хлеб</h3>
+          <span class="cart-content-right__weight">700 gramm</span>
+          <div class="cart-content-right__quant">Количество: <span>2</span>
+          </div>
+          <div class="cart-content-right__value">124 P</div>
+  <button class="btn btn-reset btn--danger">удалить</button>
+        </div>
+      </article>
+    </div>
+
+    <div class="cart-content-result">
+    <div class="cart-content-result__content">
+      <div class="cart-content-result__quant">Количество товаров
+        <strong class="cart-content-result__value">10</strong>
+      </div>
+      <div class="cart-content-result__summ">К оплате
+        <strong class="cart-content-result__value">1000 P</strong>
+      </div>
+      <div class="cart-content-result__btn">
+        <button class="btn btn-reset btn--success">Оформить заказ
+        </button>
+      </div>
+
+    </div>
+  </div>
+  </div>
+</section>
+
+      <section class="cart-checkout">
+  <div class="container">
+    <div class="cart-checkout__title">
+      <h2 class="cart-checkout__subtitle subtitle">Выбрано товаров <span class="cart-checkout__span"> 3</span> на сумму <span  class="cart-checkout__span">300 P</span></h2>
+    </div>
+    <div class="cart-products__blok">
+      <ul class="cart-products__list list-reset grid">
+        <li class="cart-products__item">
+
+          <div class="cart-products__image"><img src="img/bread.png" alt=""></div>
+          <div class="cart-products__name mini-title">Бородинский хлебушок</div>
+        </li>
+        <li class="cart-products__item">
+
+          <div class="cart-products__image"><img src="img/bread.png" alt=""></div>
+          <div class="cart-products__name mini-title">Бородинский хлебушок</div>
+        </li>
+        <li class="cart-products__item">
+
+          <div class="cart-products__image"><img src="img/catalog-1.png" alt=""></div>
+          <div class="cart-products__name mini-title">Бородинский хлебушок</div>
+        </li>
+      </ul>
+    </div>
+
+   <h2 class="cart-checkout__subtitle subtitle">Для оформления заказа заполните форму</h2>
+
+    <form action="#" class="main-form">
+      <label class="main-form__label main-form__label--title">
+            <span class="main-form__caption">Ваше имя*</span>
+        <input type="text" class="main-form__input">
+      </label>
+      <label class="main-form__label main-form__label--title">
+            <span class="main-form__caption">Ваш Телефон*</span>
+        <input type="text" class="main-form__input">
+      </label>
+      <label class="main-form__label">
+            <span class="main-form__caption">Комментарий</span>
+          <textarea type="text" class="main-form__textarea"></textarea>
+        </label>
+        <div class="main-form__send">
+          <input type="submit" name="submit" value="Сохранить" class="btn btn--primary btn-reset">
+        </div>
+      </form>
+
+  </div>
+</section>
+
+      <section class="result">
+  <div class="container">
+    <div class="result__header">
+      <h2 class="result__subtitle subtitle">Заказ создан</h2>
+      <div class="suggestion suggestion--subactive result__suggestion--subactive">
+        <a href="">
+          <span>вернуться к заказу</span>
+          <svg>
+            <use xlink:href="img/sprite.svg#ahead"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+<div class="suggestion result__suggestion">
+      <a href="">
+        <span class="">В магазин</span>
+        <svg>
+          <use xlink:href="img/sprite.svg#ahead"></use>
+        </svg>
+      </a>
+    </div>
+
+  </div>
+</section>
 
     </main>
     <footer class="footer">

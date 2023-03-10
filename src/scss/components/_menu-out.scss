@@ -84,8 +84,8 @@
       color: var(--shadow-color);
     }
     @include small-tablet {
-      margin: 10px 0;
-      font-size: 20px;
+      //margin: 10px 0;
+
     }
   }
   &__li {

@@ -114,10 +114,24 @@
 &__title {
   margin: 0;
   margin-bottom: 20px;
-  font-family: var( --font-family-tahoma);
-  font-size: 25px;
-  color: var(--wood-bark-color);
+
   //text-shadow: white 2px 1px 10px;
+  a {
+    font-family: var( --font-family-tahoma);
+    font-size: 25px;
+    color: var(--wood-bark-color);
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: var(--jaffa-color);
+    }
+    &:active {
+      color: var(--jaffa-color);
+    }
+    &:focus {
+      color: var(--jaffa-color);
+    }
+  }
 }
 
 }

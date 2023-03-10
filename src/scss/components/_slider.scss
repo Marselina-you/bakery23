@@ -53,7 +53,12 @@
   padding: 50px 0;
 
   @include tablet {
+    padding: 40px 0;
+    height: 20px;
+  }
+  @include small-tablet {
     padding: 0;
+    margin-top: 20px;
     height: 20px;
   }
 
@@ -69,7 +74,6 @@
     border-radius: 5px;
     border-width: 25px 50px 25px 0;
     border-color: transparent #fff transparent transparent;
-    //background-color: white;
     transition: border-color 0.3s ease-in-out;
 
 
