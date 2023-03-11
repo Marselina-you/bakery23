@@ -3,7 +3,7 @@
   &__control {
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: flex-start;
     width: 100%;
     background-color: transparent;
     cursor: pointer;
@@ -14,17 +14,17 @@
 
     @include small-tablet {
       margin: 10px 0;
-      font-size: 20px;
+      font-size: var(--second-offset);
     }
   }
   &__descr {
     font-family: var(--font-family-jost);
-    font-size: 20px;
+    font-size: var(--second-offset);
     color: var(--wood-bark-color);
   }
   &__item {
       font-family: var(--font-family-jost);
-      font-size: 20px;
+      font-size: var(--second-offset);
       line-height: 150%;
       color: var(--wood-bark-color);
     }
@@ -42,7 +42,7 @@
     }
     &__content {
       overflow: hidden;
-      padding: 0 20px;
+      padding: 0 var(--second-offset);
       max-height: 0;
       box-sizing: content-box;
       opacity: 0;

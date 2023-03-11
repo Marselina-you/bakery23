@@ -7,7 +7,7 @@
 
     @include small-tablet {
       padding: 0;
-      padding-bottom: 20px;
+      padding-bottom: var(--second-offset);
     }
   }
 .about-images {
@@ -64,21 +64,21 @@
     line-height: 150%;
 
     @include tablet {
-      margin-top: 40px;
+      margin-top: var(--main-offset);
       padding: 5px 0;
     }
   }
   &__text {
-    margin-bottom: 40px;
+    margin-bottom: var(--main-offset);
     display: flex;
     flex-wrap: wrap;
     width: 50%;
     font-family: var(--font-family-segoe);
-    font-size: 20px;
+    font-size: var(--second-offset);
     line-height: 160%;
 
     @include mobile {
-      margin-bottom: 20px;
+      margin-bottom: var(--second-offset);
       align-items: center;
       width: 70%;
       font-size: 18px;

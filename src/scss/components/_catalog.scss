@@ -26,23 +26,23 @@
     padding: 10px 0;
   }
   &__top {
-    margin-top: 20px;
+    margin-top: var(--second-offset);
   }
   &__available {
-    font-size: 20px;
+    font-size: var(--second-offset);
     line-height: 160%;
     color: gray;
   }
 
   &__value {
     font-weight: bold;
-    font-size: 20px;
+    font-size: var(--second-offset);
     line-height: 160%;
     color: var(--wood-bark-color);
   }
   &__status {
-    margin-bottom: 20px;
-    font-size: 20px;
+    margin-bottom: var(--second-offset);
+    font-size: var(--second-offset);
     line-height: 170%;
   }
 }
@@ -68,7 +68,7 @@
     }
   }
   &__weight {
-    font-size: 20px;
+    font-size: var(--second-offset);
     line-height: 150%;
     font-family: var(--font-family-segoe);
     color: var(--wood-bark-color);
@@ -96,7 +96,7 @@
     position: absolute;
     padding: 30px 70px;
     font-family: var(--font-family-jost);
-    font-size: 20px;
+    font-size: var(--second-offset);
     color: var(--light-color);
 
     mask: url("../img/ellipce.svg") no-repeat 50% 50%;
@@ -107,7 +107,7 @@
     &--one {
       z-index: 3;
       background-color: var(--hot-pink-color);
-      top: 20px;
+      top: var(--second-offset);
 }
     &--two {
       background-color:var(--bondi-blue-color);

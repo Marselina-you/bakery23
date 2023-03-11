@@ -5,29 +5,25 @@
 
 
   &__slide {
-
-   margin-right: 60px;
+    margin-right: var(--big-offset);
     text-align: center;
     display: block;
     justify-content: center;
     align-items: center;
 
-
-
     @include tablet {
-      margin-right: 10px;
+      margin-right: var(--small-offset);
     }
   }
 &__title {
   padding: 30px 0;
   font-size: 25px;
-  text-shadow: white 2px 1px 10px;
+  text-shadow: white 2px 1px var(--small-offset);
 
   @include small-tablet {
     margin: 0;
     padding: 0;
-    //margin-top: 10px;
-    padding-top: 10px;
+    padding-top: var(--small-offset);
     font-size: 18px;
   }
 }
@@ -50,20 +46,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
   padding: 50px 0;
 
   @include tablet {
     padding: 40px 0;
-    height: 20px;
+    height: var(--second-offset);
   }
   @include small-tablet {
     padding: 0;
-    margin-top: 20px;
-    height: 20px;
+    margin-top: var(--second-offset);
+    height: var(--second-offset);
   }
-
-
 
   &__prev {
     position: absolute;
@@ -79,7 +72,6 @@
 
 
     &:active {
-
       border-color:  transparent var(--jaffa-color) transparent transparent;
     }
     &:hover {
@@ -93,7 +85,7 @@
       left: 36%;
       width: 30px;
       height: 30px;
-      border-width: 15px 30px 15px 10px;
+      border-width: 15px 30px 15px var(--small-offset);
       border-color:  transparent var(--jaffa-color) transparent transparent;
 
       &:active {
@@ -136,7 +128,6 @@
         right: 36%;
         width: 30px;
         height: 30px;
-        //border-width: 15px 30px 15px 10px;
         border-width: 15px 10px 15px 30px;
         border-color: transparent transparent transparent var(--jaffa-color);
 
@@ -150,9 +141,6 @@
           border-color:  transparent transparent transparent var(--jaffa-color-hover);
         }
       }
-
-
-
     }
   }
 

@@ -16,7 +16,7 @@
       margin-right: 50px;
 
       @include small-tablet {
-        margin-right: 10px;
+        margin-right: var(--small-offset);
       }
     }
 

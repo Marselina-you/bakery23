@@ -25,10 +25,10 @@
   }
   &__caption {
     font-family: var(--font-family-tahoma);
-    font-size: 20px;
+    font-size: var(--second-offset);
 
     @include small-tablet {
-      margin-bottom: 10px;
+      margin-bottom: var(--small-offset);
     }
   }
   &__select {
@@ -36,7 +36,7 @@
     height: 52px;
     border: none;
     font-family: var(--font-family-tahoma);
-    font-size: 20px;
+    font-size: var(--second-offset);
     line-height: 160%;
     color: #9a9ca5;
 
@@ -57,9 +57,9 @@
     width: 50%;
     height: 52px;
     border: none;
-    padding: 0 10px;
+    padding: 0 var(--small-offset);
     font-family: var(--font-family-tahoma);
-    font-size: 20px;
+    font-size: var(--second-offset);
     line-height: 160%;
     color: #9a9ca5;
 
@@ -79,7 +79,7 @@
     width: 50%;
     height: 152px;
     border: none;
-    padding: 0 10px;
+    padding: 0 var(--small-offset);
     font-size: 16px;
     line-height: 160%;
     color: #9a9ca5;
@@ -94,7 +94,7 @@
   }
   &__send {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     padding: 10px 0;
   }
 }

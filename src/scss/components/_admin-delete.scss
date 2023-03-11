@@ -1,8 +1,8 @@
 .admin-delete {
   &__quest {
-    padding-bottom: 20px;
+    padding-bottom: var(--second-offset);
     font-family: var(--font-family-tahoma);
-    font-size: 20px;
+    font-size: var(--second-offset);
   }
 
 &__block {
@@ -10,6 +10,6 @@
 
 }
 &__item {
-  padding-right: 20px;
+  padding-right: var(--second-offset);
 }
 }

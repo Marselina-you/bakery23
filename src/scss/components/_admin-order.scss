@@ -1,13 +1,13 @@
 .admin-order {
   background-color: var(--blue-light-color);
 &__block {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: var(--main-offset);
+  padding-bottom: var(--main-offset);
   }
   &__article {
     grid-column: 3 span;
     border: 2px solid black;
-    padding: 10px;
+    padding: var(--small-offset);
     background-color: var(--blue-color);
 
     @include big-desktop {
@@ -25,25 +25,25 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 10px;
+    padding-bottom: var(--small-offset);
 
     &:not(:last-child) {
       border-bottom: 1px solid gray;
-      margin-bottom: 10px;
+      margin-bottom: var(--small-offset);
     }
 }
   &__caption {
     font-family: var(--font-family-tahoma);
-    font-size: 20px;
+    font-size: var(--second-offset);
     color: black;
 }
   &__value {
     font-family: var(--font-family-jost);
-    font-size: 20px;
+    font-size: var(--second-offset);
     color: black;
   }
 .admin-order__btn {
-    padding: 5px 10px;
+    padding: 5px var(--small-offset);
     font-size: 18px;
 }
 }

@@ -10,14 +10,12 @@
   }
   &__item {
     display: flex;
-
-
     padding: 20px 0;
     color: var(--mexican-red-color);
   }
 
   &__value {
-    margin-left: 40px;
+    margin-left: var(--main-offset);
     color: var(--wood-bark-color);
   }
 }

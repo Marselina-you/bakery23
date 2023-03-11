@@ -18,7 +18,7 @@
 
   }
 &__wrap {
-    margin-top: 20px;
+    margin-top: var(--second-offset);
     padding: 2px 0;
     text-align: center;
     background-color: var(--royal-blue-color);
@@ -27,7 +27,7 @@
   }
   &__status {
     font-family: var(--font-family-tahoma);
-    font-size: 20px;
+    font-size: var(--second-offset);
     line-height: 150%;
     color: var(--light-color);
 
@@ -53,7 +53,7 @@
     }
   }
   &__name {
-    padding-bottom: 20px;
+    padding-bottom: var(--second-offset);
     height: 35px;
   }
 &__image {

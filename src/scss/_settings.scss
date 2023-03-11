@@ -135,7 +135,7 @@ a {
   border-radius: 4px;
   padding: 0 var(--second-offset);
   width: 100%;
-  height: 60px;
+  height: var(--big-offset);
   //font: var(--middle-book);
   background-color: var(--light-color);
   color: var(--color-text);
@@ -240,3 +240,68 @@ fill: var(--jaffa-color);
     }
   }
 }
+//h1
+.title {
+  margin: 0;
+  font-family: var(--font-family-tahoma);
+  padding: 40px 0;
+  font-size: 28px;
+  color: var(--wood-bark-color);
+
+  @include mobile {
+    font-size: 24px;
+  }
+}
+//h2
+.subtitle {
+  margin: 0;
+  font-family: var(--font-family-tahoma);
+  font-size: 24px;
+  color: var(--shadow-color);
+
+  @include small-tablet {
+    font-size: 20px;
+  }
+
+}
+//h3
+.message {
+  margin: 0;
+  font-family: var(--font-family-tahoma);
+  font-size: 20px;
+  color: var(--wood-bark-color);
+
+}
+//h4
+.mini-title {
+  margin: 0;
+  font-size: 16px;
+  line-height: 150%;
+  font-family: var(--font-family-tahoma);
+  color: var(--wood-bark-color);
+
+}
+//for status
+.royal-blue-color {
+  color: var( --royal-blue-color);
+}
+.genoa-color {
+  color: var(--genoa-color);
+}
+.jaffa-color {
+  color: var(--jaffa-color);
+}
+.hot-pink-color {
+  color: var(--hot-pink-color);
+}
+//for date
+.color--wait {
+  color: var(--genoa-color);
+}
+.color--get {
+  color: var(--red-color);
+}
+.color--end {
+  color: var(--shadow-color);
+}
+

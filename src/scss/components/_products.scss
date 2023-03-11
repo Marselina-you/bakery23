@@ -9,8 +9,6 @@
 &__item {
   grid-column: 4 span;
 
-
-
   @include small-tablet {
     grid-column: 12 span;
   }
@@ -22,22 +20,18 @@
     filter: brightness(80%);
     transition: filter 0.9s ease-in-out;
     &:hover {
-      //transform: rotate(5deg);
-      filter: brightness(100%);
+     filter: brightness(100%);
       }
      }
      @include small-tablet {
       display: none;
     }
-
-
-
-}
-&__link {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  }
+  &__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   &__title {
     font-family: var(--font-family-jost);
@@ -59,9 +53,8 @@
     @include small-tablet {
       margin: 0;
       width: 100%;
-      //border: 1 px solid var(--apricot-color);
       border-radius: 4px;
-      padding: 20px;
+      padding: var(--second-offset);
       text-align: center;
       background-color: var(--apricot-color);
       transition: background-color color 0.3s ease-in-out ;
@@ -82,7 +75,7 @@
     }
   }
   &__slogan {
-    margin-bottom: 20px;
+    margin-bottom: var(--second-offset);
     width: 70%;
     font-family: var(--font-family-segoe);
     font-size: 24px;
@@ -91,7 +84,7 @@
 
     @include tablet {
       width: 90%;
-      font-size: 20px;
+      font-size: var(--second-offset);
       line-height: 100%;
     }
 

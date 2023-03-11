@@ -4,7 +4,7 @@
 
   &__subtitle {
     grid-column: 12 span;
-    
+
   }
 
   &__item {
@@ -19,7 +19,7 @@
 
   }
   &__link {
-    padding-right: 20px;
+    padding-right: var(--second-offset);
   }
   &__back {
     grid-column: 4 span;

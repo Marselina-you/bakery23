@@ -22,11 +22,11 @@
 
     @include small-tablet {
       grid-column: 12 span;
-      border-radius: 10px 10px;
+      border-radius: 10px var(--small-offset);
       padding: 15px 0;
 
       &:not(:last-child) {
-        margin-bottom: 10px;
+        margin-bottom: var(--small-offset);
       }
     }
 

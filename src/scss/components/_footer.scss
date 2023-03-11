@@ -22,7 +22,7 @@
     color: var(--light-color);
 
     @include small-tablet {
-      padding-top: 10px;
+      padding-top: var(--small-offset);
       font-size: 16px;
     }
   }

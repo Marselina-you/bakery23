@@ -2,20 +2,12 @@
 
   &__list {
     display: flex;
-
-    @include small-tablet {
-
-
-    }
-
   }
   &__item {
     transition: opacity 0.3s ease-in-out;
 
     &:not(:last-child) {
       margin-right: 50px;
-
-
     }
 
 
@@ -26,8 +18,13 @@
       opacity: 0.8;
       transition: opacity 0.3s ease-in-out;
 
-
       &:hover {
+        opacity: 1;
+      }
+      &:active {
+        opacity: 1;
+      }
+      &:active {
         opacity: 1;
       }
     }

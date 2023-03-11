@@ -62,8 +62,8 @@
     padding: 60px 0;
 
     @include small-tablet {
-      padding-top: 10px;
-      padding-bottom: 40px;
+      padding-top: var(--small-offset);
+      padding-bottom:var(--main-offset)
     }
   }
 .cart-slider {
@@ -88,7 +88,7 @@
   }
   &__status {
     font-family: var(--font-family-tahoma);
-    font-size: 20px;
+    font-size: var(--second-offset);
     line-height: 170%;
 
   }
@@ -104,7 +104,7 @@
   }
 &__title {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: var(--second-offset);
 a {
     font-family: var( --font-family-tahoma);
     font-size: 25px;

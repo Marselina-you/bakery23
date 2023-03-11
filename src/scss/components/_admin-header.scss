@@ -13,11 +13,11 @@
 
   &__item {
     &:not(:last-child) {
-      margin-right: 40px;
+      margin-right:var(--main-offset);
 
       @include small-tablet {
         margin: 0;
-        margin-bottom: 10px;
+        margin-bottom: var(--small-offset);
       }
     }
   }
@@ -30,7 +30,7 @@
     transition: color 0.3s ease-in-out;
 
     span {
-      padding-left: 10px;
+      padding-left: var(--small-offset);
 
       &:active {
         border: 1px solid var(--jaffa-color);

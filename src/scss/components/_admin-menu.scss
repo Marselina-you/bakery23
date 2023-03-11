@@ -9,7 +9,7 @@
 .admin-menu-nav {
   &__list {
     display: flex;
-    padding-bottom: 20px;
+    padding-bottom: var(--second-offset);
 
     @include small-tablet {
       flex-direction: column;

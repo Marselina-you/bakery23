@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   id="blue_copy"
+   viewBox="0 0 7.059248 14.031047"
    version="1.1"
-   viewBox="0 0 42.574249 48.671204"
-   xml:space="preserve"
+   id="svg15"
    sodipodi:docname="back.svg"
-   width="42.574249"
-   height="48.671204"
+   width="7.059248"
+   height="14.031047"
    inkscape:version="1.1 (c68e22c387, 2021-05-23)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg"><defs
-     id="defs12" /><sodipodi:namedview
-     id="namedview10"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview17"
      pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1.0"
@@ -21,20 +23,44 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      showgrid="false"
-     inkscape:zoom="8.32"
-     inkscape:cx="21.754808"
-     inkscape:cy="24.21875"
+     inkscape:zoom="34.666667"
+     inkscape:cx="3.3317308"
+     inkscape:cy="6.1298077"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="blue_copy" /><g
-     id="Layer_8_copy_4_3_"
-     transform="matrix(-1,0,0,1,70.78725,-25.664614)"><path
-       d="m 28.213,27.267 v 8.294 c 0,0.571 0.305,1.1 0.8,1.385 l 20.212,11.669 c 1.066,0.616 1.066,2.155 0,2.771 L 29.013,63.055 c -0.495,0.286 -0.8,0.814 -0.8,1.385 v 8.294 c 0,1.231 1.333,2.001 2.399,1.385 L 69.987,51.386 c 1.066,-0.616 1.066,-2.155 0,-2.771 L 30.612,25.881 c -1.066,-0.615 -2.399,0.154 -2.399,1.386 z"
-       id="path2" /><path
-       d="M 69.987,48.615 30.612,25.881 c -0.193,-0.112 -0.395,-0.164 -0.597,-0.19 l 37.972,21.923 c 1.066,0.616 1.066,2.155 0,2.771 L 28.612,73.119 c -0.1,0.058 -0.205,0.092 -0.308,0.126 0.308,0.914 1.401,1.398 2.308,0.874 L 69.987,51.386 c 1.067,-0.616 1.067,-2.156 0,-2.771 z"
-       id="path4" /><path
-       d="m 28.213,27.267 v 8.294 c 0,0.571 0.305,1.1 0.8,1.385 l 20.212,11.669 c 1.066,0.616 1.066,2.155 0,2.771 L 29.013,63.055 c -0.495,0.286 -0.8,0.814 -0.8,1.385 v 8.294 c 0,1.231 1.333,2.001 2.399,1.385 L 69.987,51.386 c 1.066,-0.616 1.066,-2.155 0,-2.771 L 30.612,25.881 c -1.066,-0.615 -2.399,0.154 -2.399,1.386 z"
-       id="path6" /></g></svg>
+     inkscape:current-layer="arrow-ios-forward-2" />
+  <defs
+     id="defs4">
+    <style
+       id="style2">.cls-1{fill:#fff;opacity:0;}.cls-2{fill:#231f20;}</style>
+  </defs>
+  <title
+     id="title6">arrow-ios-forward</title>
+  <g
+     id="arrow-ios-forward"
+     transform="translate(-8.9982397,-4.9707624)"
+     style="display:inline">
+    <g
+       id="arrow-ios-forward-2"
+       data-name="arrow-ios-forward"
+       style="display:inline">
+      <path
+         class="cls-2"
+         d="m 15.055728,19 a -1,1 0 0 0 0.64,-0.23 -1,1 0 0 0 0.13,-1.41 l -4.48,-5.36 4.32,-5.37 a -1,1 0 0 0 -0.15,-1.41 -1,1 0 0 0 -1.46,0.15 l -4.8300004,6 a -1,1 0 0 0 0,1.27 l 5.0000004,6 a -1,1 0 0 0 0.83,0.36 z"
+         id="path10"
+         style="display:inline" />
+    </g>
+  </g>
+  <metadata
+     id="metadata860">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>arrow-ios-forward</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

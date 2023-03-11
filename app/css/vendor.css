@@ -545,7 +545,7 @@ template {
   top: 2px;
   height: 7px;
   min-height: 0;
-  min-width: 10px;
+  min-width: var(--small-offset);
   width: auto;
 }
 
