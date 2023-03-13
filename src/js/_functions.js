@@ -64,9 +64,9 @@ const swiper = new Swiper('.swiper', {
 // import Rellax from 'rellax';
 // const rellax = new Rellax('.rellax');
 
-// Подключение плавной прокрутки к якорям
-// import SmoothScroll from 'smooth-scroll';
-// const scroll = new SmoothScroll('a[href*="#"]');
+//Подключение плавной прокрутки к якорям
+import SmoothScroll from 'smooth-scroll';
+const scroll = new SmoothScroll('a[href*="#"]');
 
 // Подключение событий свайпа на мобильных
 // import 'swiped-events';
