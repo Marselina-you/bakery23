@@ -273,12 +273,19 @@ if (iconClose) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
 
+//import { Autoplay, Pagination, Navigation } from "swiper";
+
+swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_0__.Autoplay]);
 const sliderActions = document.querySelector('.sliderActions');
 const cartSlider = document.querySelector('.cartSlider');
 if (sliderActions) {
   const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](sliderActions, {
     slidesPerView: 2,
     spaceBetween: 70,
+    autoplay: true,
+    autoplay: {
+      delay: 3000
+    },
     navigation: {
       nextEl: '.actions-slider-nav__next',
       prevEl: '.actions-slider-nav__prev'

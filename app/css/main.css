@@ -755,10 +755,15 @@ a {
   line-height: 150%;
   color: var(--wood-bark-color);
 }
+@media (max-width: 1270px) {
+  .products__slogan {
+    font-size: 20px;
+  }
+}
 @media (max-width: 1024px) {
   .products__slogan {
     width: 90%;
-    font-size: var(--second-offset);
+    font-size: 20px;
     line-height: 100%;
   }
 }

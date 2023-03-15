@@ -82,9 +82,13 @@
     line-height: 150%;
     color: var(--wood-bark-color);
 
+    @include mini-desktop {
+      font-size: 20px;
+    }
+
     @include tablet {
       width: 90%;
-      font-size: var(--second-offset);
+      font-size: 20px;
       line-height: 100%;
     }
 

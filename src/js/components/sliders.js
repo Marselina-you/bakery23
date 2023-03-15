@@ -1,10 +1,18 @@
 import Swiper from 'swiper';
+//import { Autoplay, Pagination, Navigation } from "swiper";
+import SwiperCore, { Autoplay } from 'swiper';
+SwiperCore.use([Autoplay]);
 const sliderActions = document.querySelector('.sliderActions');
 const cartSlider = document.querySelector('.cartSlider');
 if (sliderActions) {
   const swiper = new Swiper(sliderActions, {
     slidesPerView: 2,
     spaceBetween: 70,
+    autoplay: true,
+    autoplay: {
+      delay: 3000,
+      },
+
 
     navigation: {
       nextEl: '.actions-slider-nav__next',
@@ -21,6 +29,8 @@ if (sliderActions) {
       },
       1200: {
         slidesPerView: 2,
+
+
       }
     }
   });
