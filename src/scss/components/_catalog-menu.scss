@@ -7,7 +7,7 @@
 }
   &__link {
     font-family: var(--font-family-jost);
-    font-size: 24px;
+    font-size: 26px;
     color: var(--light-color);
 
     &--active {
@@ -89,7 +89,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--grain-brown-color);
+  opacity: 0.8;
+  background-color: var(--blue-dark-color);
   cursor: pointer;
 
 

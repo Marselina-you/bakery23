@@ -8,10 +8,11 @@ if (sliderActions) {
   const swiper = new Swiper(sliderActions, {
     slidesPerView: 2,
     spaceBetween: 70,
-    autoplay: true,
+    loop: true,
     autoplay: {
       delay: 3000,
       },
+      speed: 1000,
 
 
     navigation: {
@@ -40,7 +41,11 @@ if (cartSlider) {
   const swiper = new Swiper(cartSlider, {
     slidesPerView: 1,
     spaceBetween: 5,
-    //loop: true,
+    autoplay: {
+      delay: 2000,
+    },
+    speed: 1000,
+    loop: true,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,

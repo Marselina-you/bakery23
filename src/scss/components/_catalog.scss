@@ -9,7 +9,7 @@
 
   &__article {
 &:not(:nth-last-child(-n+2)) {
-  border-bottom: 2px solid gray;
+  border-bottom: 2px solid var(--wood-bark-color);
 }
 }
 }

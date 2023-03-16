@@ -282,10 +282,11 @@ if (sliderActions) {
   const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](sliderActions, {
     slidesPerView: 2,
     spaceBetween: 70,
-    autoplay: true,
+    loop: true,
     autoplay: {
       delay: 3000
     },
+    speed: 1000,
     navigation: {
       nextEl: '.actions-slider-nav__next',
       prevEl: '.actions-slider-nav__prev'
@@ -308,7 +309,11 @@ if (cartSlider) {
   const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](cartSlider, {
     slidesPerView: 1,
     spaceBetween: 5,
-    //loop: true,
+    autoplay: {
+      delay: 2000
+    },
+    speed: 1000,
+    loop: true,
     pagination: {
       el: ".swiper-pagination",
       clickable: true

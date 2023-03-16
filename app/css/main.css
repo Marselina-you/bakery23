@@ -13,7 +13,7 @@
   --big-offset: 60px;
   --small-offset: 10px;
   --light-color: #fff;
-  --wood-bark-color: #2e1207;
+  --wood-bark-color: #431f11;
   --shadow-color: #8b7355;
   --millbrook-color: #5F3F33;
   --kashmir-blue-color: #516293;
@@ -34,6 +34,7 @@
   --mexican-red-color: #A52A2A;
   --grain-brown-color: #dcd7af;
   --blue-color: #dfebf4ff;
+  --blue-dark-color: #9ad0e9;
   --blue-light-color: #f2f3f5;
   --gray-color: #c7c6c6;
   --hot-pink-color: #ff64af;
@@ -993,7 +994,7 @@ a {
 }
 .catalog-menu__link {
   font-family: var(--font-family-jost);
-  font-size: 24px;
+  font-size: 26px;
   color: var(--light-color);
 }
 .catalog-menu__link--active {
@@ -1076,7 +1077,8 @@ a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: var(--grain-brown-color);
+  opacity: 0.8;
+  background-color: var(--blue-dark-color);
   cursor: pointer;
 }
 @media (max-width: 768px) {
@@ -1127,7 +1129,7 @@ a {
   }
 }
 .catalog__article:not(:nth-last-child(-n+2)) {
-  border-bottom: 2px solid gray;
+  border-bottom: 2px solid var(--wood-bark-color);
 }
 
 .catalog-left {
@@ -1388,6 +1390,10 @@ a {
   -ms-flex-align: center;
   align-items: center;
 }
+.actions-slider__slide img {
+  border: 3px solid var(--blue-dark-color);
+  border-radius: 4px;
+}
 @media (max-width: 1024px) {
   .actions-slider__slide {
     margin-right: var(--small-offset);
@@ -1409,6 +1415,7 @@ a {
 
 .swiper {
   width: 100%;
+  padding: 5px;
 }
 
 .swiper-slide img {
@@ -2921,6 +2928,150 @@ a {
   -ms-flex-pack: end;
   justify-content: flex-end;
   padding: 10px 0;
+}
+
+.products-d__container {
+  padding: 50px 0;
+}
+.products-d__image {
+  margin-bottom: 30px;
+  padding-bottom: 50px;
+}
+
+.products-d-stage {
+  width: 200px;
+  height: 200px;
+  -webkit-perspective: 1600px;
+  perspective: 1600px;
+  -webkit-perspective-origin: 50% -440px;
+  perspective-origin: 50% -440px;
+}
+
+figure {
+  display: block;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #84b2c7;
+  background-color: #9ad0e9;
+  opacity: 0.9;
+}
+
+.cube {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+figure {
+  -webkit-transform-origin: 50% 50% 0;
+  -ms-transform-origin: 50% 50% 0;
+  transform-origin: 50% 50% 0;
+}
+
+.front {
+  -webkit-transform: translateZ(100px);
+  transform: translateZ(100px);
+}
+
+.back {
+  -webkit-transform: rotateY(180deg) translateZ(100px);
+  transform: rotateY(180deg) translateZ(100px);
+}
+
+.top {
+  -webkit-transform: rotateX(90deg) translateZ(100px);
+  transform: rotateX(90deg) translateZ(100px);
+}
+
+.bottom {
+  -webkit-transform: rotateX(-90deg) translateZ(100px);
+  transform: rotateX(-90deg) translateZ(100px);
+}
+
+.left {
+  -webkit-transform: rotateY(-90deg) translateZ(100px);
+  transform: rotateY(-90deg) translateZ(100px);
+}
+
+.right {
+  -webkit-transform: rotateY(90deg) translateZ(100px);
+  transform: rotateY(90deg) translateZ(100px);
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+.cube {
+  -webkit-animation: rotate 30s infinite linear;
+  animation: rotate 30s infinite linear;
+}
+
+figure {
+  background-size: 100%;
+}
+
+.front {
+  background-image: url(../img/product-2.png);
+}
+.front--bread {
+  background-image: url(../img/product-16.png);
+}
+.front--loaf {
+  background-image: url(../img/product-3.png);
+}
+
+.back {
+  background-image: url(../img/product-9.png);
+}
+.back--bread {
+  background-image: url(../img/product-17.png);
+}
+.back--loaf {
+  background-image: url(../img/product-18.png);
+}
+
+.right {
+  background-image: url(../img/product-10.png);
+}
+.right--bread {
+  background-image: url(../img/product-14.png);
+}
+.right--loaf {
+  background-image: url(../img/product-13.png);
+}
+
+.left {
+  background-image: url(../img/product-4.png);
+}
+.left--bread {
+  background-image: url(../img/product-8.png);
+}
+.left--loaf {
+  background-image: url(../img/product-7.png);
 }
 
 .menu {
