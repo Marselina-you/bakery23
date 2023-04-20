@@ -13,8 +13,8 @@ body {
   //padding: 0;
 	//min-height: 100%;
   width: 100%;
-
-	background-color: var(--varden-color);
+  font-family: var(--font-family-tahoma), var(--font-family-tahoma-bold), var(--font-family-jost), var(--font-family-segoe);
+  background-color: var(--varden-color);
 }
 .main {
   min-height: calc(94vh - 98px);
@@ -32,7 +32,7 @@ body {
   min-width: 320px;
   min-height: 100%;
 
-  font-size: 16px;
+ 
 }
 
 img {

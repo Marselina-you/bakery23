@@ -101,6 +101,7 @@ html {
 
 body {
   width: 100%;
+  font-family: var(--font-family-tahoma), var(--font-family-tahoma-bold), var(--font-family-jost), var(--font-family-segoe);
   background-color: var(--varden-color);
 }
 
@@ -118,7 +119,6 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100%;
-  font-size: 16px;
 }
 
 img {
@@ -1098,8 +1098,9 @@ a {
   transition: filter 0.3 ease-in-out, -webkit-filter 0.3 ease-in-out;
 }
 .catalog-menu-images__item img {
-  -webkit-filter: brightness(80%);
-  filter: brightness(80%);
+  width: 70%;
+  -webkit-filter: brightness(100%);
+  filter: brightness(100%);
   -webkit-transition: -webkit-filter 0.9s ease-in-out;
   transition: -webkit-filter 0.9s ease-in-out;
   -o-transition: filter 0.9s ease-in-out;
@@ -1107,8 +1108,8 @@ a {
   transition: filter 0.9s ease-in-out, -webkit-filter 0.9s ease-in-out;
 }
 .catalog-menu-images__item img:hover {
-  -webkit-filter: brightness(100%);
-  filter: brightness(100%);
+  -webkit-filter: brightness(80%);
+  filter: brightness(80%);
 }
 
 .link--active {
@@ -3035,7 +3036,7 @@ figure {
 }
 
 .front {
-  background-image: url(../img/product-2.png);
+  background-image: url(../img/product-12.png);
 }
 .front--bread {
   background-image: url(../img/product-16.png);
@@ -3048,7 +3049,7 @@ figure {
   background-image: url(../img/product-9.png);
 }
 .back--bread {
-  background-image: url(../img/product-17.png);
+  background-image: url(../img/img-20.png);
 }
 .back--loaf {
   background-image: url(../img/product-18.png);

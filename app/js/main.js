@@ -237,9 +237,7 @@ const pullIn = {
 };
 
 //console.log(iconMenu);
-console.log(menu);
-console.log(body);
-console.log(iconClose);
+
 //console.log();
 /* выбираем класс icon-menu и
          добавляем метод click с функцией, вызываемой при клике */

@@ -107,10 +107,11 @@
     transition: filter 0.3 ease-in-out;
 
     img {
-      filter: brightness(80%);
+      width: 70%;
+      filter: brightness(100%);
       transition: filter 0.9s ease-in-out;
       &:hover {
-        filter: brightness(100%);
+        filter: brightness(80%);
         }
        }
 
