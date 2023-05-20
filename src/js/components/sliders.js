@@ -6,7 +6,7 @@ const sliderActions = document.querySelector('.sliderActions');
 const cartSlider = document.querySelector('.cartSlider');
 if (sliderActions) {
   const swiper = new Swiper(sliderActions, {
-    slidesPerView: 2,
+    slidesPerView: 1,
     spaceBetween: 70,
     loop: true,
     autoplay: {
@@ -20,19 +20,13 @@ if (sliderActions) {
       prevEl: '.actions-slider-nav__prev',
     },
     breakpoints: {
-      76: {
-        slidesPerView: 2,
-        spaceBetween: 20
-
+      576: {
+        slidesPerView: 1
       },
       768: {
         slidesPerView: 2
-      },
-      1200: {
-        slidesPerView: 2,
-
-
       }
+
     }
   });
 }

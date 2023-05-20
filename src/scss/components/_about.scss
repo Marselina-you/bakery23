@@ -64,8 +64,8 @@
     line-height: 150%;
 
     @include tablet {
-      margin-top: var(--main-offset);
-      padding: 5px 0;
+      margin-top: 60px;
+      padding: 0;
     }
   }
   &__text {
@@ -76,6 +76,11 @@
     font-family: var(--font-family-segoe);
     font-size: var(--second-offset);
     line-height: 160%;
+
+    @include tablet {
+      margin-bottom: var(--second-offset);
+      font-size: 18px;
+    }
 
     @include mobile {
       margin-bottom: var(--second-offset);

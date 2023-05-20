@@ -23,12 +23,14 @@
 .icon-close {
   display: flex;
   justify-content: flex-end;
+  margin-top: 50px;
   margin-bottom: 50px;
   padding: 0 var(--second-offset);
 
 
   svg{
-    width: var(--main-offset);
+    width: 34px;
+    height: 34px;
     fill: white;
     transition: fill 0.3s ease-in-out;
 
@@ -72,7 +74,7 @@
     font-family: var(--font-family-tahoma);
     font-size: 25px;
     color: var(--light-color);
-    transition: color 0.8s ease-in-out;
+    transition: color 0.3s ease-in-out;
 
     &:hover {
       color: var(--shadow-color);

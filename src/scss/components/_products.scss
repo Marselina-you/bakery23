@@ -39,17 +39,21 @@
     line-height: 50%;
     text-transform: uppercase;
     color: var(--wood-bark-color);
-    transition: color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 
-    &:active {
-      border: 1px solid var(--jaffa-color-hover);
-    }
-    &:hover {
-      color: var(--jaffa-color-hover);
-    }
     &:focus {
       color: var(--jaffa-color-hover);
     }
+
+    @include hover {
+      background-color: var(--jaffa-color-hover);
+      color: white;
+    }
+    &:active {
+      color: var(--active-color);
+    }
+
+
     @include small-tablet {
       margin: 0;
       width: 100%;
@@ -59,19 +63,7 @@
       background-color: var(--apricot-color);
       transition: background-color color 0.3s ease-in-out ;
 
-      &:active {
-        background-color: var(--jaffa-color-hover);
-        color: var(--light-color);
 
-      }
-      &:hover {
-        background-color: var(--jaffa-color-hover);
-        color: var(--light-color);
-      }
-      &:focus {
-        background-color: var(--jaffa-color-hover);
-        color: var(--light-color);
-      }
     }
   }
   &__slogan {
