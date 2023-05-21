@@ -42,12 +42,14 @@
   &:active {
     border: 1px solid var(--royal-blue-color);
     color: var(--jaffa-color);
+}
 
-
-  }
+@include for-desktop {
   &:hover {
     color: var(--royal-blue-color);
   }
+}
+
   &:focus {
     color: var(--royal-blue-color);
   }

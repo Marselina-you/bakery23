@@ -11,9 +11,13 @@
     color: var(--jaffa-color);
     transition: color 0.3s ease-in-out;
 
-    &:hover {
-      color: var(--jaffa-color-hover);
+
+    @include for-desktop {
+      &:hover {
+        color: var(--jaffa-color-hover);
+      }
     }
+
     &:active {
       color: var(--jaffa-color-hover);
     }

@@ -16,9 +16,13 @@
       border: 1px solid var(--jaffa-color-hover);
 
     }
-    &:hover {
-      color: var(--royal-blue-color);
+
+    @include for-desktop {
+      &:hover {
+        color: var(--royal-blue-color);
+      }
     }
+
     &:focus {
       color: var(--royal-blue-color);
     }

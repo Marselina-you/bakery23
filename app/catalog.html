@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Bakery2023</title>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+ <!-- -->
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+  <div class="site-container">
+    <header class="header">
+  <div class="container">
+    <nav class="nav header__nav" title="">
+      <ul class="nav__list header__list list-reset">
+        <li class="nav__item"><a href="#" class="nav__link">
+          <svg>
+            <use xlink:href="img/sprite.svg#houme"></use>
+          </svg>
+          <span class="nav__span">Главная</span>
+        </a></li>
+        <li class="nav__item"><a href="#" class="nav__link">
+          <svg>
+            <use xlink:href="img/sprite.svg#shop"></use>
+          </svg>
+          <span class="nav__span">Каталог</span></a></li>
+        <li class="nav__item"><a href="#" class="nav__link">
+          <svg>
+            <use xlink:href="img/sprite.svg#basket"></use>
+          </svg>
+          <span class="nav__count"
+              id="cart-count">1</span>
+            </a>
+          <span class="nav__span">Корзина</span></a></li>
+        <li class="nav__item"><a href="#" class="nav__link">
+          <svg>
+            <use xlink:href="img/sprite.svg#order"></use>
+          </svg>
+          <span class="nav__span">Заказы</span></a></li>
+        <li class="nav__item"><a href="#" class="nav__link">
+          <svg>
+            <use xlink:href="img/sprite.svg#mail"></use>
+          </svg>
+          <span class="nav__span">Написать</span></a></li>
+        <li class="nav__item"><a href="#" class="nav__link">
+          <svg>
+            <use xlink:href="img/sprite.svg#account"></use>
+          </svg>
+          <span class="nav__span">Войти</span></a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+    <main class="main">
+
+      <section class="logo">
+  <div class="container logo__container">
+    <div class="logo__left">
+      <div class="logo__logo">
+        <img loading="lazy" src="img/logo.svg" class="" width="246" height="207">
+      </div>
+    </div>
+    <div class="logo__right">
+      <div class="btn-reset icon-menu burger hero__burger" aria-label="Открыть меню">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="catalog-menu">
+  <div class="container catalog-menu__container">
+    <div class="catalog-menu__top">
+      <ul class="catalog-menu__list list-reset grid">
+        <li class="catalog-menu__item catalog-menu__item--color-1 centered">
+          <a href="" class="catalog-menu__link">пирожные</a>
+        </li>
+        <li class="catalog-menu__item catalog-menu__item--color-2 centered">
+          <a href="" class="catalog-menu__link catalog-menu__link--active">белая выпечка</a>
+        </li>
+        <li class="catalog-menu__item catalog-menu__item--color-3 centered">
+          <a href="" class="catalog-menu__link">черный хлеб</a>
+        </li>
+      </ul>
+    </div>
+    <div class="catalog-menu-images">
+      <a href="" class="catalog-menu-images__item centered"><img src="img/img-20.png" alt="bread"></a>
+      <a href="" class="catalog-menu-images__item centered"><img src="img/product-12.png" alt="cake"></a>
+      <a href="" class="catalog-menu-images__item centered"><img src="img/product-3.png" alt="loaf"></a>
+    </div>
+  </div>
+</section>
+
+      <section class="catalog">
+  <div class="container catalog__container">
+    <article class="catalog__article grid">
+      <div class="catalog-left">
+        <div class="catalog-left__image">
+          <img src="img/catalog-1.png" alt="">
+        </div>
+        <div class="catalog-left__top">
+          <span class="catalog-left__available">в наличии</span>
+          <strong class="catalog-left__value">100 P</strong>
+        </div>
+        <span class="catalog-left__status royal-blue-color">новинка!</span>
+        <button class="btn btn-reset btn--primary">В корзину</button>
+      </div>
+      <div class="catalog-right">
+        <h2 class="catalog-right__name">Бородинский хлеб</h2>
+        <span class="catalog-right__weight">700 gramm</span>
+        <div class="catalog-accordion" data-simplebar="init">
+          <ul class="catalog-accordion__list list-reset">
+            <li class="catalog-accordion__item">
+              <button class="btn-reset catalog-accordion__control" aria-expanded="false">
+                <h3 class="catalog-accordion__subtitle subtitle">Описание</h3>
+                <span class="catalog-accordion__icon"></span>
+              </button>
+              <div class="catalog-accordion__content" aria-hidden="true">
+                <p class="catalog-accordion__descr">
+                  хлеб, приготовленный заварным способом из смеси ржаной обойной муки, пшеничной хлебопекарной муки
+                  II сорта и красного ржаного ферментированного солода, с добавлением соли, сахара,
+                  патоки и кориандра, тмина или аниса.
+                </p>
+              </div>
+            </li>
+            <li class="catalog-accordion__item">
+              <button class="btn-reset catalog-accordion__control" aria-expanded="false">
+                <h3 class="catalog-accordion__subtitle subtitle">Основные ингредиенты</h3>
+                <span class="catalog-accordion__icon"></span>
+              </button>
+              <ul class="catalog-accordion__content list-reset" aria-hidden="true">
+                <li class="catalog-accordion__item">пшеничная мука высшего сорта</li>
+                <li class="catalog-accordion__item">маргарин</li>
+                <li class="catalog-accordion__item">сахар</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="catalog-right__slogan">Выбирай спред!</div>
+        <div class="catalog-right-spread">
+          <div class="catalog-right-spread__item catalog-right-spread__item--one">малиновая</br> пропитка</div>
+          <div class="catalog-right-spread__item catalog-right-spread__item--two">ромовый </br>душ</div>
+          <div class="catalog-right-spread__item catalog-right-spread__item--three">вишневое </br>спа</div>
+        </div>
+      </div>
+    </article>
+    <article class="catalog__article grid">
+      <div class="catalog-left">
+        <div class="catalog-left__image">
+          <img src="img/catalog-1.png" alt="">
+        </div>
+        <div class="catalog-left__top">
+          <span class="catalog-left__available">в наличии</span>
+          <strong class="catalog-left__value">100 P</strong>
+        </div>
+        <span class="catalog-left__status genoa-color">уже в продаже</span>
+        <button class="btn btn-reset btn--primary">В корзину</button>
+      </div>
+      <div class="catalog-right">
+        <h2 class="catalog-right__name">Бородинский хлеб</h2>
+        <span class="catalog-right__weight">700 gramm</span>
+        <div class="catalog-accordion" data-simplebar="init">
+          <ul class="catalog-accordion__list list-reset">
+            <li class="catalog-accordion__item">
+              <button class="btn-reset catalog-accordion__control" aria-expanded="false">
+                <h3 class="catalog-accordion__subtitle subtitle">Описание</h3>
+                <span class="catalog-accordion__icon"></span>
+              </button>
+              <div class="catalog-accordion__content" aria-hidden="true">
+                <p class="catalog-accordion__descr">
+                  хлеб, приготовленный заварным способом из смеси ржаной обойной муки, пшеничной хлебопекарной муки
+                  II сорта и красного ржаного ферментированного солода, с добавлением соли, сахара,
+                  патоки и кориандра, тмина или аниса.
+                </p>
+              </div>
+            </li>
+            <li class="catalog-accordion__item">
+              <button class="btn-reset catalog-accordion__control" aria-expanded="false">
+                <h3 class="catalog-accordion__subtitle subtitle">Основные ингредиенты</h3>
+                <span class="catalog-accordion__icon"></span>
+              </button>
+              <ul class="catalog-accordion__content list-reset" aria-hidden="true">
+                <li class="catalog-accordion__item">пшеничная мука высшего сорта</li>
+                <li class="catalog-accordion__item">маргарин</li>
+                <li class="catalog-accordion__item">сахар</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="catalog-right__slogan">Выбирай спред!</div>
+        <div class="catalog-right-spread">
+          <div class="catalog-right-spread__item catalog-right-spread__item--one">малиновая</br> пропитка</div>
+          <div class="catalog-right-spread__item catalog-right-spread__item--two">ромовый </br>душ</div>
+          <div class="catalog-right-spread__item catalog-right-spread__item--three">вишневое </br>спа</div>
+        </div>
+      </div>
+    </article>
+    <article class="catalog__article grid">
+      <div class="catalog-left">
+        <div class="catalog-left__image">
+          <img src="img/catalog-1.png" alt="">
+        </div>
+        <div class="catalog-left__top">
+          <span class="catalog-left__available">в наличии</span>
+          <strong class="catalog-left__value">100 P</strong>
+        </div>
+        <span class="catalog-left__status jaffa-color">bestseller</span>
+        <button class="btn btn-reset btn--primary">В корзину</button>
+      </div>
+      <div class="catalog-right">
+        <h2 class="catalog-right__name">Бородинский хлеб</h2>
+        <span class="catalog-right__weight">700 gramm</span>
+        <div class="catalog-accordion" data-simplebar="init">
+          <ul class="catalog-accordion__list list-reset">
+            <li class="catalog-accordion__item">
+              <button class="btn-reset catalog-accordion__control">
+                <h3 class="catalog-accordion__subtitle subtitle">Описание</h3>
+                <span class="catalog-accordion__icon"></span>
+              </button>
+              <div class="catalog-accordion__content" aria-hidden="true">
+                <p class="catalog-accordion__descr">
+                  хлеб, приготовленный заварным способом из смеси ржаной обойной муки, пшеничной хлебопекарной муки
+                  II сорта и красного ржаного ферментированного солода, с добавлением соли, сахара,
+                  патоки и кориандра, тмина или аниса.
+                </p>
+              </div>
+            </li>
+            <li class="catalog-accordion__item">
+              <button class="btn-reset catalog-accordion__control">
+                <h3 class="catalog-accordion__subtitle subtitle">Основные ингредиенты</h3>
+                <span class="catalog-accordion__icon"></span>
+              </button>
+              <ul class="catalog-accordion__content list-reset" aria-hidden="true">
+                <li class="catalog-accordion__item">пшеничная мука высшего сорта</li>
+                <li class="catalog-accordion__item">маргарин</li>
+                <li class="catalog-accordion__item">сахар</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="catalog-right__slogan">Выбирай спред!</div>
+        <div class="catalog-right-spread">
+          <div class="catalog-right-spread__item catalog-right-spread__item--one">масло</div>
+          <div class="catalog-right-spread__item catalog-right-spread__item--two">варенье</div>
+          <div class="catalog-right-spread__item catalog-right-spread__item--three">джем</div>
+        </div>
+      </div>
+    </article>
+    <ul class="pagination list-reset">
+      <li class="pagination__item  link--active"><a href="">
+          <svg>
+            <use xlink:href="img/sprite.svg#arrow-back"></use>
+          </svg>
+        </a></li>
+      <li class="pagination__item  link--active"><a href="#">1</a>
+      </li>
+      <li class="pagination__item link--unactive"><a href="#">2</a>
+      </li>
+      <li class="pagination__item link--unactive"><a href="#">
+          <svg>
+            <use xlink:href="img/sprite.svg#arrow-ahead"></use>
+          </svg>
+        </a></li>
+    </ul>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer">
+  <div class="container footer__container">
+    <div class="footer__author">Alferova.studio.com</div>
+    <nav class="nav social footer__social" title="">
+      <ul class="social__list list-reset">
+        <li class="social__item"><a href="#" class="social__link">
+            <svg>
+              <use xlink:href="img/sprite.svg#odno"></use>
+            </svg>
+          </a></li>
+        <li class="social__item"><a href="#" class="social__link">
+            <svg>
+              <use xlink:href="img/sprite.svg#vk"></use>
+            </svg>
+          </a></li>
+        <li class="social__item"><a href="#" class="social__link">
+            <svg>
+              <use xlink:href="img/sprite.svg#twit"></use>
+            </svg>
+          </a></li>
+        <li class="social__item"><a href="#" class="social__link">
+            <svg>
+              <use xlink:href="img/sprite.svg#what"></use>
+            </svg>
+          </a></li>
+      </ul>
+    </nav>
+    <div class="menu">
+      <div class="icon-close">
+        <svg>
+          <use xlink:href="img/sprite.svg#plus"></use>
+        </svg>
+      </div>
+      <ul class="list-reset menu-list">
+        <li class="menu-list__item"><a href="">Главная</a></li>
+        <li class="menu-list__item"><a href="#actions">События</a></li>
+        <div class="menu-accordion" data-simplebar="init">
+          <ul class="menu-accordion__list list-reset">
+            <li class="menu-accordion__item">
+              <button class="btn-reset menu-accordion__control">
+                <span class="menu-accordion__subtitle">Продукты</span>
+              </button>
+              <div class="menu-accordion__content" aria-hidden="true">
+                <ul class="menu-accordion__submenu list-reset">
+                  <li class="menu-accordion__li"><a href="">Черный хлеб</a></li>
+                  <li class="menu-accordion__li"><a href="">Пирожные</a></li>
+                  <li class="menu-accordion__li"><a href="">Белая выпечка</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <li class="menu-list__item"><a href="#about">О нас</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+  </div>
+</body>
+
+</html>

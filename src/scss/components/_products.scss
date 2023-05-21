@@ -45,12 +45,15 @@
       color: var(--jaffa-color-hover);
     }
 
-    @include hover {
-      background-color: var(--jaffa-color-hover);
-      color: white;
-    }
+
     &:active {
       color: var(--active-color);
+    }
+    @include for-desktop {
+      &:hover {
+        background-color: var(--jaffa-color-hover);
+        color: white;
+      }
     }
 
 

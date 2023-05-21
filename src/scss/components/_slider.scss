@@ -80,9 +80,12 @@
     &:active {
       border-color:  transparent var(--jaffa-color) transparent transparent;
     }
-    &:hover {
-      border-color:  transparent var(--jaffa-color) transparent transparent;
+    @include for-desktop {
+      &:hover {
+        border-color:  transparent var(--jaffa-color) transparent transparent;
+      }
     }
+
     &:focus {
       border-color:  transparent var(--jaffa-color) transparent transparent;
     }
@@ -95,9 +98,6 @@
       border-color:  transparent var(--jaffa-color) transparent transparent;
 
       &:active {
-        border-color:  transparent var(--jaffa-color-hover) transparent transparent;
-      }
-      &:hover {
         border-color:  transparent var(--jaffa-color-hover) transparent transparent;
       }
       &:focus {
@@ -123,9 +123,12 @@
 
         border-color:  transparent transparent transparent var(--jaffa-color);
       }
-      &:hover {
-        border-color:  transparent transparent transparent var(--jaffa-color);
+      @include for-desktop {
+        &:hover {
+          border-color:  transparent transparent transparent var(--jaffa-color);
+        }
       }
+
       &:focus {
         border-color:  transparent transparent transparent var(--jaffa-color);
       }
@@ -140,9 +143,7 @@
         &:active {
           border-color:  transparent transparent transparent var(--jaffa-color-hover);
         }
-        &:hover {
-          border-color:  transparent transparent transparent var(--jaffa-color-hover);
-        }
+
         &:focus {
           border-color:  transparent transparent transparent var(--jaffa-color-hover);
         }

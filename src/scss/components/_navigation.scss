@@ -20,22 +20,7 @@
       }
     }
 
-    svg {
-      width: 30px;
-      height: 30px;
-      fill: var(--wood-bark-color);
-      transition: fill 0.3s ease-in-out;
 
-      &:active {
-        fill: var(--jaffa-color-hover);
-      }
-      &:hover {
-        fill: var(--jaffa-color-hover);
-      }
-      &:focus {
-        fill: var(--jaffa-color-hover);
-      }
-    }
   }
   &__link {
     z-index: 500;
@@ -46,17 +31,17 @@
     font-family: var(--font-family-jost);
     font-size: 18px;
     color: var(--wood-bark-color);
-    transition: color 0.3s ease-in-out;
+    svg {
+      width: 30px;
+      height: 30px;
+      fill: var(--wood-bark-color);
 
+
+
+    }
     &:active {
       border: 1px solid var(--jaffa-color-hover);
 
-    }
-    &:hover {
-      color: var(--jaffa-color-hover);
-    }
-    &:focus {
-      color: var(--jaffa-color-hover);
     }
 }
 
@@ -65,6 +50,39 @@
     display: none;
   }
 }
+}
+.nav__link {
+span {
+  transition: color 0.3s ease-in-out;
+}
+svg {
+  transition: fill 0.3s ease-in-out;
+}
+
+@include for-desktop {
+  &:hover {
+    span {
+
+      color: var(--jaffa-color-hover);
+    }
+    svg {
+
+      fill: var(--jaffa-color-hover);
+    }
+  }
+}
+
+  &:focus {
+    span {
+      color: var(--jaffa-color-hover);
+    }
+    svg {
+
+        fill: var(--jaffa-color-hover);
+
+    }
+
+  }
 }
 
 

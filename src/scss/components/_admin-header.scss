@@ -36,9 +36,13 @@
         border: 1px solid var(--jaffa-color);
 
       }
-      &:hover {
-        color: var(--kashmir-blue-color);
+
+      @include for-desktop {
+        &:hover {
+          color: var(--kashmir-blue-color);
+        }
       }
+
       &:focus {
         color: var(--kashmir-blue-color);
       }
@@ -53,9 +57,13 @@
         fill: var(--jaffa-color);
 
       }
-      &:hover {
-        fill: var(--kashmir-blue-color);
+
+      @include for-desktop {
+        &:hover {
+          fill: var(--kashmir-blue-color);
+        }
       }
+
       &:focus {
         fill: var(--kashmir-blue-color);
       }

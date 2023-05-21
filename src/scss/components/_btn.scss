@@ -16,10 +16,12 @@
 
     background-color: var(--jaffa-color-hover);
   }
-  &:hover {
-
-    background-color: var(--jaffa-color-hover);
+  @include for-desktop {
+    &:hover {
+      background-color: var(--jaffa-color-hover);
+    }
   }
+
   &:focus {
     background-color: var(--jaffa-color-hover);
   }
@@ -33,9 +35,13 @@
   &:active {
     background-color: var(--red-color);
   }
-  &:hover {
-    background-color: var(--red-color-hover);
+
+  @include for-desktop {
+    &:hover {
+      background-color: var(--red-color-hover);
+    }
   }
+
   &:focus {
     background-color: var(--red-color-hover);
   }
@@ -46,9 +52,13 @@
   &:active {
     background-color: var(--genoa-color);
   }
-  &:hover {
-    background-color: var(--genoa-color-hover);
+
+  @include for-desktop {
+    &:hover {
+      background-color: var(--genoa-color-hover);
+    }
   }
+
   &:focus {
     background-color: var(--genoa-color-hover);
   }

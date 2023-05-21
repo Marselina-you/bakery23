@@ -15,9 +15,12 @@
   &:active {
     border: 1px solid var(--jaffa-color-hover);
   }
-  &:hover {
-    background-color: var(--jaffa-color-hover);
+  @include for-desktop {
+    &:hover {
+      background-color: var(--jaffa-color-hover);
+    }
   }
+
   &:focus {
     background-color: var(--jaffa-color-hover);
   }

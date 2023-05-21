@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Bakery2023</title>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+ <!-- -->
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+  <div class="site-container">
+    <header class="header">
+  <div class="container">
+    <nav class="nav header__nav" title="">
+      <ul class="nav__list header__list list-reset">
+        <li class="nav__item"><a href="#" class="nav__link">
+          <svg>
+            <use xlink:href="img/sprite.svg#houme"></use>
+          </svg>
+          <span class="nav__span">Главная</span>
+        </a></li>
+        <li class="nav__item"><a href="#" class="nav__link">
+          <svg>
+            <use xlink:href="img/sprite.svg#shop"></use>
+          </svg>
+          <span class="nav__span">Каталог</span></a></li>
+        <li class="nav__item"><a href="#" class="nav__link">
+          <svg>
+            <use xlink:href="img/sprite.svg#basket"></use>
+          </svg>
+          <span class="nav__count"
+              id="cart-count">1</span>
+            </a>
+          <span class="nav__span">Корзина</span></a></li>
+        <li class="nav__item"><a href="#" class="nav__link">
+          <svg>
+            <use xlink:href="img/sprite.svg#order"></use>
+          </svg>
+          <span class="nav__span">Заказы</span></a></li>
+        <li class="nav__item"><a href="#" class="nav__link">
+          <svg>
+            <use xlink:href="img/sprite.svg#mail"></use>
+          </svg>
+          <span class="nav__span">Написать</span></a></li>
+        <li class="nav__item"><a href="#" class="nav__link">
+          <svg>
+            <use xlink:href="img/sprite.svg#account"></use>
+          </svg>
+          <span class="nav__span">Войти</span></a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+    <main class="main">
+      <section class="cart-navigation">
+  <div class="container">
+    <h1 class="cart-navigation__title title">Корзина</h1>
+    <div class="cart-navigation__content">
+      <a href="#" class="cart-navigation__link">Перейти в каталог</a>
+      <nav class="menu-cabinet-nav" title="menu-cart">
+        <ul class="nav__list list-reset">
+          <li class="nav__item"><a href="#" class="nav__link">Пирожные</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Белая выпечка</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Черный хлеб</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</section>
+
+      <section class="login">
+  <div class="container">
+    <h2 class="login__title subtitle">Для оформления заказа нужно войти или <a href="" class="login__link">
+        зарегистрироваться</a></h2>
+    <form action="#" class="main-form">
+      <label class="main-form__label main-form__label--title">
+        <span class="main-form__caption">Ваше email*</span>
+        <input type="text" class="main-form__input">
+      </label>
+      <label class="main-form__label main-form__label--title">
+        <span class="main-form__caption">Ваш Телефон*</span>
+        <input type="text" class="main-form__input">
+      </label>
+      <div class="main-form__send">
+        <input type="submit" name="submit" value="войти" class="btn btn--success btn-reset">
+      </div>
+    </form>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer">
+  <div class="container footer__container">
+    <div class="footer__author">Alferova.studio.com</div>
+    <nav class="nav social footer__social" title="">
+      <ul class="social__list list-reset">
+        <li class="social__item"><a href="#" class="social__link">
+            <svg>
+              <use xlink:href="img/sprite.svg#odno"></use>
+            </svg>
+          </a></li>
+        <li class="social__item"><a href="#" class="social__link">
+            <svg>
+              <use xlink:href="img/sprite.svg#vk"></use>
+            </svg>
+          </a></li>
+        <li class="social__item"><a href="#" class="social__link">
+            <svg>
+              <use xlink:href="img/sprite.svg#twit"></use>
+            </svg>
+          </a></li>
+        <li class="social__item"><a href="#" class="social__link">
+            <svg>
+              <use xlink:href="img/sprite.svg#what"></use>
+            </svg>
+          </a></li>
+      </ul>
+    </nav>
+    <div class="menu">
+      <div class="icon-close">
+        <svg>
+          <use xlink:href="img/sprite.svg#plus"></use>
+        </svg>
+      </div>
+      <ul class="list-reset menu-list">
+        <li class="menu-list__item"><a href="">Главная</a></li>
+        <li class="menu-list__item"><a href="#actions">События</a></li>
+        <div class="menu-accordion" data-simplebar="init">
+          <ul class="menu-accordion__list list-reset">
+            <li class="menu-accordion__item">
+              <button class="btn-reset menu-accordion__control">
+                <span class="menu-accordion__subtitle">Продукты</span>
+              </button>
+              <div class="menu-accordion__content" aria-hidden="true">
+                <ul class="menu-accordion__submenu list-reset">
+                  <li class="menu-accordion__li"><a href="">Черный хлеб</a></li>
+                  <li class="menu-accordion__li"><a href="">Пирожные</a></li>
+                  <li class="menu-accordion__li"><a href="">Белая выпечка</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <li class="menu-list__item"><a href="#about">О нас</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+  </div>
+</body>
+
+</html>
